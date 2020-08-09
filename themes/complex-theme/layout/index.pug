@@ -1,0 +1,23 @@
+extends partial/layout.pug
+block aditional-info
+  include partial/info-header.pug
+
+block container
+    include partial/half-panel.pug
+    hr
+    h3 Posts
+    include mixins/post.pug
+    +posts()
+    hr
+    h3 Noticias
+    p convocatoria
+    hr
+    h5 Integrantes    
+    hr
+
+block pagination
+    include mixins/paginator.pug
+    +home()
+
+block copyright
+    include partial/copyright.pug

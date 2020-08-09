@@ -1,0 +1,14 @@
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member-info {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.img-author {
+  border-radius: 50%;
+  width: 10em;
+}

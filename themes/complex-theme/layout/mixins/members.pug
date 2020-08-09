@@ -1,0 +1,18 @@
+mixin memberPost(item)
+    .member-info
+      img.img-author(src=url_for(item.image), alt='Header')
+      .info-author
+        h1.name-member #{ item.name }
+        strong.title-member #{item.title}
+        p.description-member #{item.description}
+        <p></p>
+
+//- Members Page
+mixin members()
+  - site.posts.data.forEach((item) => {
+      - isMember = item.type == 'author'
+      if isMember
+        .members-list
+          a.member-link(href=url_for(item.path))
+            +memberPost(item)
+  - })

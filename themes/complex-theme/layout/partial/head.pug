@@ -1,0 +1,16 @@
+meta(charset='utf-8')
+meta(name='X-UA-Compatible', content='IE=edge')
+
+title
+    block site_title
+        = config.title
+
+block description
+    meta(name='description', content=config.description ? config.description : __('meta_description'))
+
+meta(name='viewport', content='width=device-width, initial-scale=1')
+
+link(rel='icon', href=url_for(theme.favicon))
+link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+link(rel='stylesheet', href=url_for('css/theme.css'))
+link(rel='search', type='application/opensearchdescription+xml', href=url_for('atom.xml'), title=config.title)

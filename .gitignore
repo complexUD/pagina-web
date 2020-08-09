@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+
+### Hexo ###
+db.json
+public/
+.deploy_git/
+
+### Node ###
+# Logs
+*.log
+node_modules/
+public/
+.deploy*/

@@ -1,0 +1,46 @@
+name: Complex-theme
+url:
+
+menu:
+  Inicio: /
+  Conocenos:
+    Mision y Vision: /archives
+    Miembros: /members
+    Reconocimientos: /archives
+  Investigación:
+    Lineas de Investigación: /archives
+    Proyectos: /projects
+    Investigadores: /members
+  Eventos:
+    Seminarios: /archives
+    Congresos: /projects
+    Encuentros: /archives
+    Conversatorios: /projects
+  Aprende:
+    Convocatorias: /about
+  RSS: /atom.xml
+
+
+logo: images/favicon.ico
+favicon: images/favicon.ico
+
+socials:
+  twitter: images/twitter.png
+  youtube: images/youtube.png
+  facebook: images/facebook.png
+  udistrital: images/udistrital_esc.png
+
+
+# Comment
+# e.g disqus: seansun
+disqus:
+
+# Analytics
+mathjax: false
+google_analytics:
+
+# Copyright Infomation
+copyright:
+  since:
+  name:
+  url:
