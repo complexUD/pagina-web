@@ -6,8 +6,9 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server",
-    "grunt": "grunt build"
+    "server": "hexo server --draft --open",
+    "sass": "node-sass -w themes/complex-theme/source/scss/theme.scss themes/complex-theme/source/css/theme.css --output-style compressed",
+    "start": "npm run sass & npm run server"
   },
   "hexo": {
     "version": "4.2.1"
@@ -19,15 +20,13 @@
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^1.0.0",
     "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-pug": "^1.0.0",
-    "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "bootstrap": "^4.5.2",
+    "hexo-browsersync": "^0.3.0",
+    "node-sass": "^4.14.1"
   }
 }
