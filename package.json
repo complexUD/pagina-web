@@ -6,9 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server --draft --open",
-    "sass": "node-sass -w themes/complex-theme/source/scss/theme.scss themes/complex-theme/source/css/theme.css --output-style compressed",
-    "start": "npm run sass & npm run server"
+    "server": "hexo server",
+    "start": "hexo server --open"
   },
   "hexo": {
     "version": "4.2.1"
@@ -16,17 +15,18 @@
   "dependencies": {
     "hexo": "^4.2.1",
     "hexo-admin": "^2.3.0",
+    "hexo-browsersync": "^0.3.0",
+    "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^1.0.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-pug": "^1.0.0",
+    "hexo-renderer-sass": "^0.4.0",
     "hexo-server": "^1.0.0"
   },
   "devDependencies": {
-    "bootstrap": "^4.5.2",
-    "hexo-browsersync": "^0.3.0",
-    "node-sass": "^4.14.1"
+    "bootstrap": "^4.5.2"
   }
 }
