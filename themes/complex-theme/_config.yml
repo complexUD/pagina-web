@@ -21,15 +21,14 @@ menu:
   RSS: /atom.xml
 
 
-logo: images/favicon.ico
-favicon: images/favicon.ico
+logo: favicon.ico
+favicon: favicon.ico
 
 socials:
-  twitter: images/twitter.png
-  youtube: images/youtube.png
-  facebook: images/facebook.png
-  udistrital: images/udistrital_esc.png
-
+  twitter: icons/twitter.png
+  youtube: icons/youtube.png
+  facebook: icons/facebook.png
+  udistrital: icons/udistrital_esc.png
 
 # Comment
 # e.g disqus: seansun
