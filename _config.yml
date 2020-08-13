@@ -5,17 +5,23 @@
 # Site
 title: Complex UD
 subtitle: ''
-description: ''
+description: 'Página Web del Grupo de Investigación Complexud de la Universidad Distrital'
 keywords:
-author: Daissi Gonzalez
+  - Complexud
+  - Complejidad
+  - Sistemas complejos
+  - Fractales
+  - Grupo de Investigación 
+author:
+  - Complexud
 language: es
-timezone: ''
+timezone: 'America/Bogota'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://complexud.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -52,17 +58,8 @@ highlight:
   wrap: true
   hljs: false
 
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
-
 # Category & Tag
-default_category: uncategorized
+default_category: ''
 category_map:
 tag_map:
 
@@ -98,4 +95,6 @@ theme: complex-theme
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: 'git'
+  repo: 'https://github.com/GrupoComplejidadUD/pagina-web'
+  branch: 'gh-pages'
