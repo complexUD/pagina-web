@@ -1,27 +1,31 @@
 script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
 script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
 script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+
+if is_home()
+  script(src=url_for('/js/index.js'))
+
 //- LaTex
 if theme.mathjax
-    script(async, src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML', integrity='sha384-Ra6zh6uYMmH5ydwCqqMoykyf1T/+ZcnOQfFPhDrp2kI4OIxadnhsvvA2vv9A7xYv', crossorigin='anonymous')
-    script(type='text/x-mathjax-config')
-        | MathJax.Hub.Config({
-        |   tex2jax: {
-        |       inlineMath: [['$','$'],['\\(','\\)']],
-        |       processClass: "mathjax",
-        |       ignoreClass: "no-mathjax"
-        |   }
-        | });
+  script(async, src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML', integrity='sha384-Ra6zh6uYMmH5ydwCqqMoykyf1T/+ZcnOQfFPhDrp2kI4OIxadnhsvvA2vv9A7xYv', crossorigin='anonymous')
+  script(type='text/x-mathjax-config')
+    | MathJax.Hub.Config({
+    |   tex2jax: {
+    |     inlineMath: [['$','$'],['\\(','\\)']],
+    |     processClass: "mathjax",
+    |     ignoreClass: "no-mathjax"
+    |   }
+    | });
 
 //- Analytics tracking
 if theme.google_analytics
-    script.
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', '#{theme.google_analytics}']);
-        _gaq.push(['_trackPageview']);
+  script.
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '#{theme.google_analytics}']);
+    _gaq.push(['_trackPageview']);
 
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();

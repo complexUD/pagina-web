@@ -2,7 +2,6 @@ name: Complex-theme
 url:
 
 menu:
-  Inicio: /
   Conocenos:
     Mision y Vision: /archives
     Miembros: /members
@@ -20,6 +19,22 @@ menu:
     Convocatorias: /about
   RSS: /atom.xml
 
+footerMenu:
+  Conócenos:
+    Mision: /
+    Vision: /
+    Historia: /
+    Normatividad: /
+  Investigación:
+    Investigadores: /
+    Lineas de Investigación: /
+    Proyectos: /
+    Semillero: /
+  Eventos:
+    Seminarios: /
+    Congresos: /
+    Encuentros: /
+    Conversatorios: /
 
 logo: favicon.ico
 favicon: favicon.ico

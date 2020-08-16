@@ -1,9 +1,9 @@
 extends base/layout.pug
 
-block container
+block mainContent
+  .container.py-3
     include mixins/post.pug
     +postList()
 
-block pagination
     include mixins/paginator.pug
     +home()

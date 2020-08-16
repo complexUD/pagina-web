@@ -1,18 +1,29 @@
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.nav-stylex
-  a.navbar-brand(href='#')
+- let currentClass = is_home() ? 'fixed-top bg-transparent' : 'sticky-top'
+nav#navbar(class=currentClass).navbar.navbar-expand-lg.navbar-dark.bg-dark
+  a.navbar-brand(href=url_for(config.root))
     img.logo-cx(src=url_for(theme.logo), alt='UDistrital')
     | #{config.title}
+
   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
+
   #navbarNavDropdown.collapse.navbar-collapse.order-3.dual-collapse2.nav-cx
     ul.navbar-nav.ml-auto
       each value, key in theme.menu
-          if !value.length
-            li.nav-item.dropdown
-              a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') #{ key }
-              .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
-                each subvalor, subkey in value
-                  a.dropdown-item(href=url_for(subvalor)) #{ subkey }
-          else
-            li.nav-item
-              a.nav-link(href=url_for(value)) #{ key }
+        if typeof value === 'object'
+          -
+            let iscurrent = false
+            for(const key in value){
+              if(is_current(key)){
+                iscurrent= true;
+              }
+            }
+
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(class={active: iscurrent} id=key+'MenuLink',href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') #{ key }
+            .dropdown-menu(aria-labelledby=key+'MenuLink')
+              each subvalor, subkey in value
+                a.dropdown-item(href=url_for(subvalor) class={active: is_current(subvalor)}) #{ subkey }
+        else
+          li.nav-item
+            a.nav-link(href=url_for(value) class={active: is_current(value)}) #{ key }

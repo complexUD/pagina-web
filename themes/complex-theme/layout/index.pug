@@ -1,8 +1,7 @@
 extends base/layout.pug
-block aditional-info
+block mainContent
   include partial/info-header.pug
-
-block container
+  .container
     include partial/half-panel.pug
     hr
     h3 Posts
@@ -14,7 +13,5 @@ block container
     hr
     h5 Integrantes
     hr
-
-block pagination
     include mixins/paginator.pug
     +home()

@@ -1,10 +1,14 @@
 @charset "utf-8";
 
+@import "_base/variables";
+
 @import "_partial/nav";
-@import "_partial/header-info";
 @import "_partial/footer";
+
+@import "_partial/header-info";
 @import "_partial/half-panel";
 @import "_partial/member";
+
 // @import "_partial/post";
 // @import "_partial/footer";
 // @import "_partial/mq";
@@ -19,7 +23,8 @@
 //     font-style: normal;
 // }
 
-html,body{
-  overflow-x: hidden;
-  overflow-y: auto;
+.root {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
 }
