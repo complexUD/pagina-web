@@ -1,0 +1,12 @@
+extends ../base/layout.pug
+
+block mainContent
+  .container.py-3
+    hr
+    h3 Integrantes
+    hr
+    include ../mixins/members.pug
+    +members(page.posts)
+    //- hr
+    //- include ../mixins/paginator.pug
+    //- +home()

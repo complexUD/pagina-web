@@ -1,18 +1,26 @@
 mixin memberPost(item)
     .member-info
-      img.img-author(src=url_for(item.image), alt='Header')
+      img.mr-3.img-author(src=url_for(item.image), alt='Header')
       .info-author
         h1.name-member #{ item.name }
         strong.title-member #{item.title}
         p.description-member #{item.description}
-        <p></p>
 
 //- Members Page
-mixin members()
-  - site.posts.data.forEach((item) => {
-      - isMember = item.type == 'author'
-      if isMember
-        .members-list
-          a.member-link(href=url_for(item.path))
-            +memberPost(item)
-  - })
+mixin members(posts)
+  .card-deck
+    - posts.each(item => {
+        +memberCard(item)
+        //- .members-list
+          //- a.member-link(href=url_for(item.path))
+          //-   +memberPost(item)
+    - })
+
+mixin memberCard(item)
+  .card
+    .card-header #{ item.name }
+    img.w-100.d-block.card-img-top(src=url_for(item.image), alt='Author Img')
+    .card-body
+        strong.card-title #{item.title}
+        p.card-text #{item.description}
+        a.stretched-link(href=url_for(item.path))

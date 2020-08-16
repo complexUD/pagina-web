@@ -1,12 +1,12 @@
-extends partial/layout.pug
+extends base/layout.pug
 
-block container
+block mainContent
+  .container.py-3
+    hr
+    h1 Archivo
+    hr
     include mixins/post.pug
     +postList()
-
-block pagination
-    include mixins/paginator.pug
-    +home()
-
-block copyright
-    include partial/copyright.pug
+    //- hr
+    //- include mixins/paginator.pug
+    //- +home()

@@ -1,0 +1,12 @@
+doctype
+html(lang=config.language)
+  head
+    include head.pug
+  body
+    .root
+      include nav.pug
+      main
+        block mainContent
+      include suscription.pug
+      include footer.pug
+    include scripts.pug

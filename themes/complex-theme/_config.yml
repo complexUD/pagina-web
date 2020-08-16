@@ -2,34 +2,48 @@ name: Complex-theme
 url:
 
 menu:
-  Inicio: /
   Conocenos:
-    Mision y Vision: /archives
+    Mision y Vision: /about
     Miembros: /members
     Reconocimientos: /archives
   Investigación:
     Lineas de Investigación: /archives
-    Proyectos: /projects
+    Proyectos: /archives
     Investigadores: /members
   Eventos:
     Seminarios: /archives
-    Congresos: /projects
+    Congresos: /archives
     Encuentros: /archives
-    Conversatorios: /projects
+    Conversatorios: /archives
   Aprende:
-    Convocatorias: /about
+    Convocatorias: /archives
   RSS: /atom.xml
 
+footerMenu:
+  Conócenos:
+    Mision: /
+    Vision: /
+    Historia: /
+    Normatividad: /
+  Investigación:
+    Investigadores: /
+    Lineas de Investigación: /
+    Proyectos: /
+    Semillero: /
+  Eventos:
+    Seminarios: /
+    Congresos: /
+    Encuentros: /
+    Conversatorios: /
 
-logo: images/favicon.ico
-favicon: images/favicon.ico
+logo: favicon.ico
+favicon: favicon.ico
 
 socials:
-  twitter: images/twitter.png
-  youtube: images/youtube.png
-  facebook: images/facebook.png
-  udistrital: images/udistrital_esc.png
-
+  twitter: icons/twitter.png
+  youtube: icons/youtube.png
+  facebook: icons/facebook.png
+  udistrital: icons/udistrital_esc.png
 
 # Comment
 # e.g disqus: seansun

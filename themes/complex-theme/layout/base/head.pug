@@ -1,0 +1,21 @@
+meta(charset='utf-8')
+meta(name='X-UA-Compatible', content='IE=edge')
+meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+meta(name='author', content=page.author || config.author)
+meta(name='description', content=page.desc || config.description)
+meta(name='keywords', content=page.tags > 0 ? page.tags.data.join(' ') : config.keywords.join(' '))
+
+- let pageTitle = page.title || config.subtitle || ''
+- if (is_home()) pageTitle= 'Inicio'
+- if (is_archive()) pageTitle= 'Archivo'
+title= pageTitle + ' | ' + config.title
+link(rel='icon', href=url_for(theme.favicon))
+
+// Styles
+link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous")
+link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+link(rel='stylesheet', href=url_for('/css/theme.css'))
+
+// Meta Data
+//- link(rel='search', type='application/opensearchdescription+xml', href=url_for('atom.xml'), title=config.title)

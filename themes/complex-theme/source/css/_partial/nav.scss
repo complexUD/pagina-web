@@ -1,0 +1,29 @@
+.nav-stylex {
+    position: absolute;
+    background: transparent !important;
+    width: 100vw;
+    z-index: 2;
+}
+
+.logo-cx {
+    margin: 0px 10px;
+    width: 3em
+}
+
+.nav-cx {
+    margin-right: 50px;
+}
+
+.nav-item {
+    padding: 0px 3px;
+}
+
+.nav-link.show {
+    background-color: #262b2d;
+    color: snow;
+    border-radius: 10px;
+}
+
+.nav-link.show .dropdown-menu {
+    background-color: snow;
+}
