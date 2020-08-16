@@ -13,8 +13,8 @@ nav#navbar(class=currentClass).navbar.navbar-expand-lg.navbar-dark.bg-dark
         if typeof value === 'object'
           -
             let iscurrent = false
-            for(const key in value){
-              if(is_current(key)){
+            for(const path in value){
+              if(is_current(value[path])){
                 iscurrent= true;
               }
             }
