@@ -23,6 +23,15 @@
 //     font-style: normal;
 // }
 
+img {
+    max-width: 100%;
+}
+
+.img-centered img {
+    display: block;
+    margin: auto;
+}
+
 .root {
     display: grid;
     grid-template-rows: auto 1fr;
