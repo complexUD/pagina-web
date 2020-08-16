@@ -2,8 +2,11 @@ extends base/layout.pug
 
 block mainContent
   .container.py-3
+    hr
+    h1 Archivo
+    hr
     include mixins/post.pug
     +postList()
-
+    hr
     include mixins/paginator.pug
     +home()

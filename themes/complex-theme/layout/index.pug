@@ -1,17 +1,61 @@
 extends base/layout.pug
 block mainContent
-  include partial/info-header.pug
-  .container
-    include partial/half-panel.pug
+  .info-panel-header
+    .info-header
+      .info-align-header
+        h1 #{config.title}
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .btns-header
+          button.btnx.btn-blck(type='button') Conocenos
+          button.btnx.btn-wht(type='button') Explora
+    img.header-img(src='images/header.jpg', alt='Header')
+
+  .container.py-3
+    .half-panel
+      h1 Set a test Title
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     hr
-    h3 Posts
-    include mixins/post.pug
-    +posts()
+    .half-panel
+      .image-panel
+        img.main-img(src='images/header.jpg', alt='Header')
+      .image-info-panel
+        .info-main
+          h1 Title Section
+          p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          | enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          | nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          | pariatur.
+          button.btnx.btn-wht(type='button') Learn More
     hr
-    h3 Noticias
-    p convocatoria
+    .half-panel
+      .image-info-panel
+        .info-main
+          h1 Title Section
+          p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          | enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          | nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          | pariatur.
+          button.btnx.btn-wht(type='button') Learn More
+      .image-panel
+        img.main-img(src='images/header.jpg', alt='Header')
     hr
-    h5 Integrantes
-    hr
-    include mixins/paginator.pug
-    +home()
+    .half-panel
+      .image-panel
+        img.main-img(src='images/header.jpg', alt='Header')
+      .image-info-panel
+        .info-main
+          h1 Title Section
+          p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          | enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          | nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          | pariatur.
+          button.btnx.btn-wht(type='button') Learn More

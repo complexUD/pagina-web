@@ -8,15 +8,15 @@ menu:
     Reconocimientos: /archives
   Investigación:
     Lineas de Investigación: /archives
-    Proyectos: /projects
+    Proyectos: /archives
     Investigadores: /members
   Eventos:
     Seminarios: /archives
-    Congresos: /projects
+    Congresos: /archives
     Encuentros: /archives
-    Conversatorios: /projects
+    Conversatorios: /archives
   Aprende:
-    Convocatorias: /about
+    Convocatorias: /archives
   RSS: /atom.xml
 
 footerMenu:
