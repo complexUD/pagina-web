@@ -12,7 +12,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.nav-stylex
               a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') #{ key }
               .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
                 each subvalor, subkey in value
-                  a.dropdown-item(href=url_for(subvalor)) #{ subkey }                    
+                  a.dropdown-item(href=url_for(subvalor)) #{ subkey }
           else
             li.nav-item
               a.nav-link(href=url_for(value)) #{ key }

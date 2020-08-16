@@ -4,7 +4,7 @@
 
 # Site
 title: Complex UD
-subtitle: ''
+subtitle: 'Grupo de Investigación Complex UD'
 description: 'Página Web del Grupo de Investigación Complexud de la Universidad Distrital'
 keywords:
   - Complexud
@@ -47,7 +47,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -98,3 +98,38 @@ deploy:
   type: 'git'
   repo: 'https://github.com/GrupoComplejidadUD/pagina-web'
   branch: 'gh-pages'
+
+index2_generator:
+  # Example
+  # - layout: 'archive' # use existing archive layout
+  #   path: 'example' # output to example folder: http://127.0.0.1:4000/example/
+  #   per_page: 10
+  #   order_by: -date
+  #   include:
+  #     - tag example # include article which tag is example
+  # 
+  # - layout: 'index' # use existing archive layout
+  #   path: 'web' # output to web folder: http://127.0.0.1:4000/web/
+  #   per_page: 10
+  #   order_by: -date
+  #   include:
+  #     - category web # include article which category is Web
+
+# hexo-auto-category
+auto_category:
+  enable: true
+  
+# hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  order_by: -date
+  autodiscovery: true
+
+# hexo-generator-sitemap
+sitemap:
+  path: sitemap.xml
+  rel: true
+  tags: true
+  categories: true

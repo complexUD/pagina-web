@@ -1,0 +1,13 @@
+extends ../base/layout.pug
+block aditional-info
+  .background-no-init
+block container
+    hr
+    h3 Integrantes
+    hr
+    include ../mixins/members.pug
+    +members()
+
+block pagination
+    include ../mixins/paginator.pug
+    +home()

@@ -1,4 +1,4 @@
-extends partial/layout.pug
+extends base/layout.pug
 
 block site_title
     != page.title + ' | ' + config.title
@@ -15,6 +15,3 @@ block pagination
     include mixins/paginator.pug
     +post()
     include partial/comment.pug
-
-block copyright
-    include partial/copyright.pug
