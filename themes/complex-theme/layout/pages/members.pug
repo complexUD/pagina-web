@@ -6,7 +6,7 @@ block mainContent
     h3 Integrantes
     hr
     include ../mixins/members.pug
-    +members()
-    hr
-    include ../mixins/paginator.pug
-    +home()
+    +members(page.posts)
+    //- hr
+    //- include ../mixins/paginator.pug
+    //- +home()

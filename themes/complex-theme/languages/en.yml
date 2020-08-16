@@ -1,7 +1,7 @@
 prev: prev
 next: next
-prev_post: prev
-next_post: next
+prev_post: Anterior
+next_post: Siguiente
 read_more: '&hellip; more'
 untitled: (untitled)
 translate_original: Translate the original address

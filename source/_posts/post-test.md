@@ -1,4 +1,5 @@
 ---
+title: Hola Mundo
 name: Hola Mundo
 image: /images/header.jpg
 description: Este ha sido un proyecto para exponer diferentes creaciones

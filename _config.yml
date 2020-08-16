@@ -107,12 +107,12 @@ index2_generator:
   #   include:
   #     - tag example # include article which tag is example
   # 
-  # - layout: 'index' # use existing archive layout
-  #   path: 'web' # output to web folder: http://127.0.0.1:4000/web/
-  #   per_page: 10
-  #   order_by: -date
-  #   include:
-  #     - category web # include article which category is Web
+  - layout: 'pages/members' # use existing archive layout
+    path: 'members' # output to web folder: http://127.0.0.1:4000/web/
+    per_page: 10
+    order_by: -date
+    include:
+      - category members # include article which category is Web
 
 # hexo-auto-category
 auto_category:
