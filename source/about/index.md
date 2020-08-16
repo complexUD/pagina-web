@@ -38,5 +38,4 @@ Conformar un grupo integrado por profesores y estudiantes, interdisciplinario, q
 
 - Apoyar el desarrollo de proyectos que involucren sistemas complejos, tanto al interior de la Universidad, como en la solución a problemas de entidades externas.
 
----
 </div>
