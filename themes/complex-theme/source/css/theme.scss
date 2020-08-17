@@ -1,39 +1,15 @@
 @charset "utf-8";
 
 @import "_base/variables";
+@import "_base/mixins";
+@import "_base/fonts";
 
-@import "_partial/nav";
-@import "_partial/footer";
+@import "_layout/root";
+@import "_layout/nav";
+@import "_layout/footer";
 
 @import "_partial/header-info";
 @import "_partial/half-panel";
 @import "_partial/member";
 
-// @import "_partial/post";
-// @import "_partial/footer";
-// @import "_partial/mq";
-// @import "_partial/copyright";
-// @import "_partial/highlight";
-//
-// @font-face {
-//     font-family: 'sourcesanspro';
-//     src: url('../font/sourcesanspro.woff2') format('woff2'),
-//          url('../font/sourcesanspro.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-img {
-    max-width: 100%;
-}
-
-.img-centered img {
-    display: block;
-    margin: auto;
-}
-
-.root {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    min-height: 100vh;
-}
+@import "_pages/index";

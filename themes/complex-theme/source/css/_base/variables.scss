@@ -1,2 +1,67 @@
-$primary-dark: #fff;
-$primary: #fff;
+// Colors
+$primary: #4a688c;
+$primary-light: #627d9d;
+$primary-lighten: #a4b6cb;
+$primary-dark: #2c4c72;
+$primary-darken: #133053;
+
+$secondary: #77b62b;
+$secondary-light: #8cd039;
+$secondary-dark: #679d25;
+
+$yellow: #fab442;
+$yellow-light: #fbc36a;
+$yellow-dark: #f9a824;
+
+$red: #f20d0d;
+$red-light: #f43434;
+$red-dark: #cb0b0b;
+
+$white: #fff;
+$black: #111;
+
+$gradiant: linear-gradient(#FFFFFF, #EEF1F4);
+$shadow: 0px 4px 4px #00000044;
+
+// Fonts
+$font-primary: 'OpenSans',
+sans-serif;
+$font-titles: 'Roboto',
+sans-serif;
+$font-body: 'OpenSans',
+sans-serif;
+
+$font-size: 18px;
+
+// Responsive Layout
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// Paletton Color Generator
+// Palette URL: http://paletton.com/#uid=73C1T0kgrqR6FIdbpvPlslHqTgk */
+
+// $color-primary-0: #4A688C; // Main Primary color */
+// $color-primary-1: #A4B6CB;
+// $color-primary-2: #7088A6;
+// $color-primary-3: #2C4B71;
+// $color-primary-4: #133155;
+
+// $color-secondary-1-0: #C76175; // Main Secondary color (1) */
+// $color-secondary-1-1: #F5C2CC;
+// $color-secondary-1-2: #EC98A9;
+// $color-secondary-1-3: #A1354A;
+// $color-secondary-1-4: #791327;
+
+// $color-secondary-2-0: #79B95A; // Main Secondary color (2) */
+// $color-secondary-2-1: #CAEBBA;
+// $color-secondary-2-2: #A7DB8D;
+// $color-secondary-2-3: #529631;
+// $color-secondary-2-4: #317012;
+
+// $color-complement-0: #D6AB68; // Main Complement color */
+// $color-complement-1: #FFEACA;
+// $color-complement-2: #FEDAA3;
+// $color-complement-3: #AD8039;
+// $color-complement-4: #825815;
