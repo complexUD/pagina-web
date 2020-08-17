@@ -21,3 +21,8 @@
         @content;
     }
 }
+
+@mixin navbar-transition($properties...) {
+    transition-property: $properties;
+    transition-duration: 400ms;
+}
