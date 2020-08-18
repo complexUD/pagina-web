@@ -19,9 +19,11 @@ $red-dark: #cb0b0b;
 
 $white: #fff;
 $black: #111;
+$muted: #ccc;
 
 $gradiant: linear-gradient(#FFFFFF, #EEF1F4);
-$shadow: 0px 4px 4px #00000044;
+$shadow: 0px 4px 6px #2c4b7299;
+$not-shadow: 0px 0px 0px #0000;
 
 // Fonts
 $font-primary: 'OpenSans',
@@ -31,13 +33,19 @@ sans-serif;
 $font-body: 'OpenSans',
 sans-serif;
 
-$font-size: 18px;
+$font-size: 16px;
 
 // Responsive Layout
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+
+$brand-height: 54px;
+$brand-font-size: 24px;
+$brand-height-index: 84px;
+$brand-font-size-index: 36px;
+$navbar-gradiant-index: linear-gradient(#000C, #0000);
 
 // Paletton Color Generator
 // Palette URL: http://paletton.com/#uid=73C1T0kgrqR6FIdbpvPlslHqTgk */

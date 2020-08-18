@@ -1,29 +1,118 @@
+// Navbar Styles
 .nav-stylex {
-    position: absolute;
-    background: transparent !important;
-    width: 100vw;
-    z-index: 2;
+    font-family: $font-titles;
+    box-shadow: $shadow;
+    background: $white;
+}
+
+// Brand Section
+.navbar-brand {
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
 }
 
 .logo-cx {
-    margin: 0px 10px;
-    width: 3em
+    margin-right: 10px;
+    height: $brand-height;
+    @include navbar-transition(height);
 }
 
-.nav-cx {
-    margin-right: 50px;
+.brand-cx {
+    color: $primary;
+    font-size: $brand-font-size;
+    font-weight: bold;
+
+    @include navbar-transition(font-size, color);
 }
 
-.nav-item {
-    padding: 0px 3px;
+// Toggler Button
+.toggler-cx {
+    border-color: $primary;
+    color: $primary;
+    font-size: $brand-font-size;
+
+    @include navbar-transition(border-color, color, font-size);
 }
 
-.nav-link.show {
-    background-color: #262b2d;
-    color: snow;
-    border-radius: 10px;
+// Collapse
+.dual-collapse2 {
+    text-align: center;
+
+    @include media-lg {
+        padding-bottom: 0;
+    }
 }
 
-.nav-link.show .dropdown-menu {
-    background-color: snow;
+// Links
+.nav-link {
+    font-size: $font-size;
+    color: $primary;
+    @include navbar-transition(font-size);
+
+    &:hover {
+        color: $primary-dark;
+        text-decoration: underline;
+    }
+
+    &.active {
+        font-weight: bold;
+    }
+}
+
+.dropdown-cx-menu {
+    background-color: $primary;
+}
+
+.dropdown-cx-item {
+    color: $white;
+
+    &:hover {
+        color: $primary-dark;
+    }
+
+    &:active {
+        color: $white;
+        background-color: $primary-dark;
+    }
+
+    &.active {
+        background-color: $white;
+        color: $primary;
+    }
+}
+
+// Navbar Styles for index
+.nav-index {
+    box-shadow: $not-shadow;
+    background: $navbar-gradiant-index;
+
+    .logo-cx {
+        height: $brand-height-index;
+    }
+
+    .brand-cx {
+        display: none;
+
+        @include media-sm {
+            display: block;
+            font-size: $brand-font-size-index;
+            color: $white;
+        }
+    }
+
+    .toggler-cx {
+        border-color: $white;
+        color: $white;
+        font-size: $brand-font-size-index;
+    }
+
+    .nav-link {
+        font-size: 1.125em;
+        color: $white;
+    }
+
+    .dual-collapse2 {
+        padding-bottom: 1em;
+    }
 }
