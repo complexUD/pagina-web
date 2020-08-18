@@ -38,7 +38,6 @@
 // Collapse
 .dual-collapse2 {
     text-align: center;
-    padding-bottom: 1em;
 
     @include media-lg {
         padding-bottom: 0;
@@ -70,6 +69,11 @@
 
     &:hover {
         color: $primary-dark;
+    }
+
+    &:active {
+        color: $white;
+        background-color: $primary-dark;
     }
 
     &.active {
@@ -106,5 +110,9 @@
     .nav-link {
         font-size: 1.125em;
         color: $white;
+    }
+
+    .dual-collapse2 {
+        padding-bottom: 1em;
     }
 }
