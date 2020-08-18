@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Complex UD
-subtitle: 'Grupo de Investigación Complex UD'
+title: ComplexUD
+subtitle: 'Grupo de Investigación ComplexUD'
 description: 'Página Web del Grupo de Investigación Complexud de la Universidad Distrital'
 keywords:
   - Complexud
@@ -12,7 +12,7 @@ keywords:
   - Sistemas complejos
   - Fractales
   - Grupo de Investigación 
-author: Complexud
+author: ComplexUD
 language: es
 timezone: 'America/Bogota'
 
