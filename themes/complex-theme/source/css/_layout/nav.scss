@@ -40,7 +40,7 @@
     text-align: center;
     padding-bottom: 1em;
 
-    @include media-lg() {
+    @include media-lg {
         padding-bottom: 0;
     }
 }
@@ -90,7 +90,7 @@
     .brand-cx {
         display: none;
 
-        @include media-sm() {
+        @include media-sm {
             display: block;
             font-size: $brand-font-size-index;
             color: $white;

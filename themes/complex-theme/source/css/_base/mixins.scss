@@ -1,22 +1,22 @@
-@mixin media-sm() {
+@mixin media-sm {
     @media (min-width: $sm) {
         @content;
     }
 }
 
-@mixin media-md() {
+@mixin media-md {
     @media (min-width: $md) {
         @content;
     }
 }
 
-@mixin media-lg() {
+@mixin media-lg {
     @media (min-width: $lg) {
         @content;
     }
 }
 
-@mixin media-xl() {
+@mixin media-xl {
     @media (min-width: $xl) {
         @content;
     }
