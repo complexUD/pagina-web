@@ -2,31 +2,31 @@ name: Complex-theme
 url:
 
 menu:
-  Conocenos:
-    Mision y Vision: /about
+  Conócenos:
+    Misión y Visión: /about
     Miembros: /members
-    Reconocimientos: /archives
+    Reconocimientos: '#'
   Investigación:
-    Lineas de Investigación: /archives
-    Proyectos: /archives
+    Lineas de Investigación: '#'
+    Proyectos: '#'
     Investigadores: /members
   Eventos:
-    Seminarios: /archives
-    Congresos: /archives
-    Encuentros: /archives
-    Conversatorios: /archives
+    Seminarios: '#'
+    Congresos: '#'
+    Encuentros: '#'
+    Conversatorios: '#'
   Aprende:
-    Convocatorias: /archives
+    Convocatorias: '#'
   RSS: /atom.xml
 
 footerMenu:
   Conócenos:
-    Mision: /
-    Vision: /
-    Historia: /
-    Normatividad: /
+    Mision: /about
+    Vision: /about
+    Historia: /about
+    Normatividad: /about
   Investigación:
-    Investigadores: /
+    Investigadores: /members
     Lineas de Investigación: /
     Proyectos: /
     Semillero: /

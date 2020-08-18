@@ -56,9 +56,6 @@ mixin post(item)
             .post-content
                 != item.content
 
-mixin page(item)
+mixin page(page)
   .page
-    h1.page-title
-      +postTitle(item.title)
-    .page-content
-      != item.content
+    != page.content

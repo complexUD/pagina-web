@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: $font-size $font-primary;
+
+    color: $primary;
+    background-color: $white;
+}
+
+img {
+    // All images fluids
+    max-width: 100%;
+}
+
+.root {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    // auto          -> navbar
+    // 1fr           -> mainContent
+    // auto(default) -> others (Footer, ...etc) 
+}

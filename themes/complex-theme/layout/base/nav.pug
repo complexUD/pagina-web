@@ -1,14 +1,14 @@
-- let currentClass = is_home() ? 'fixed-top bg-transparent' : 'sticky-top'
-nav#navbar(class=currentClass).navbar.navbar-expand-lg.navbar-dark.bg-dark
+- let currentClass = is_home() ? 'fixed-top nav-index' : 'sticky-top'
+nav#navbar(class=currentClass).navbar.navbar-expand-lg.nav-stylex
   a.navbar-brand(href=url_for(config.root))
     img.logo-cx(src=url_for(theme.logo), alt='UDistrital')
-    | #{config.title}
+    span.brand-cx #{config.title}
 
-  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
-    span.navbar-toggler-icon
+  button.navbar-toggler.toggler-cx(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+    span: i.fas.fa-bars
 
-  #navbarNavDropdown.collapse.navbar-collapse.order-3.dual-collapse2.nav-cx
-    ul.navbar-nav.ml-auto
+  #navbarNavDropdown.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto.dual-collapse2
       each value, key in theme.menu
         if typeof value === 'object'
           -
@@ -21,9 +21,9 @@ nav#navbar(class=currentClass).navbar.navbar-expand-lg.navbar-dark.bg-dark
 
           li.nav-item.dropdown
             a.nav-link.dropdown-toggle(class={active: iscurrent} id=key+'MenuLink',href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') #{ key }
-            .dropdown-menu(aria-labelledby=key+'MenuLink')
+            .dropdown-menu.dropdown-cx-menu(aria-labelledby=key+'MenuLink')
               each subvalor, subkey in value
-                a.dropdown-item(href=url_for(subvalor) class={active: is_current(subvalor)}) #{ subkey }
+                a.dropdown-item.dropdown-cx-item(href=url_for(subvalor) class={active: is_current(subvalor)}) #{ subkey }
         else
           li.nav-item
             a.nav-link(href=url_for(value) class={active: is_current(value)}) #{ key }

@@ -4,12 +4,12 @@ meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
 meta(name='author', content=page.author || config.author)
 meta(name='description', content=page.desc || config.description)
-meta(name='keywords', content=page.tags > 0 ? page.tags.data.join(' ') : config.keywords.join(' '))
+meta(name='keywords', content=page.tags > 0 ? page.tags.data.join() : config.keywords.join())
 
-- let pageTitle = page.title || config.subtitle || ''
+- let pageTitle = page.title || ''
 - if (is_home()) pageTitle= 'Inicio'
 - if (is_archive()) pageTitle= 'Archivo'
-title= pageTitle + ' | ' + config.title
+title= pageTitle + ' | ' + config.subtitle
 link(rel='icon', href=url_for(theme.favicon))
 
 // Styles

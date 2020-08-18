@@ -1,0 +1,58 @@
+.main-footer {
+    background-color: $primary;
+    color: $white;
+    padding: 1em 0 2em 0;
+}
+
+.footer-list {
+    li {
+        margin-top: 0.9em;
+    }
+
+    a {
+        color: $muted;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.icons {
+    i {
+        font-size: 2em;
+        color: $white;
+
+        &:hover {
+            color: $primary-darken;
+        }
+    }
+
+    a:not(:first-child) i {
+        margin-left: 0.8em;
+    }
+}
+
+.logos {
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+
+    @include media-lg {
+        justify-content: flex-end;
+    }
+
+    img {
+        display: block;
+        width: 100px;
+        margin-left: 10px;
+    }
+}
+
+.copyright {
+    color: $muted;
+
+    a {
+        color: $white;
+    }
+}
