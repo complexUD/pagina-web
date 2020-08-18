@@ -1,5 +1,6 @@
 .info-header {
     position: relative;
+    font-family: $font-titles;
 }
 
 .info-header-img {
@@ -13,22 +14,22 @@
     position: relative;
     background: linear-gradient(#000 0%, #0005 30%, #0005 100%);
     color: $white;
-    padding: 110px 1em 1em;
+    padding: 120px 1em 1em;
 
     display: flex;
     align-items: center;
 
-    --content-min-height: 330px;
-    min-height: calc(110px + var(--content-min-height) + 1em);
-    height: 100vh;
+    @include media-max-height(400px) {
+        height: auto;
+    }
 
     @include media-md {
-        --content-min-height: 380px;
+        @include media-max-height(450px) {
+            height: auto;
+        }
     }
 
-    @include media-lg {
-        --content-min-height: 500px;
-    }
+    height: 100vh;
 }
 
 .info-align-header {
@@ -54,11 +55,9 @@
 }
 
 .info-align-title {
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 2em;
-    // @include media-sm {
-    //     font-size: 3.5rem
-    // }
 }
 
 .btns-header {
