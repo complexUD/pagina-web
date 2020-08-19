@@ -42,3 +42,9 @@ block mainContent
           img(src=url_for('images/aprende.svg'), alt="aprende")
 
     img(src=url_for('images/rectangle-curve.png'), alt="rectangle-curve").illustrations-foot
+
+  section.sponsors
+    each sp, spName in theme.sponsors
+      .sponsor-info
+        a(href=sp.url, target="_blank", rel="noopener noreferrer")
+          img(src=url_for('images/aliados/' + sp.img), alt= spName)

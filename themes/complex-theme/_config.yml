@@ -39,6 +39,23 @@ footerMenu:
 logo: favicon.ico
 favicon: favicon.ico
 
+sponsors:
+  C3:
+    url: https://www.c3.unam.mx/
+    img: C3.png
+  Universidad del Bosque:
+    url: https://www.unbosque.edu.co/
+    img: UEBosque.png
+  Universidad Nacional:
+    url: http://ciencias.bogota.unal.edu.co/gruposdeinvestigacion/caos-y-complejidad/
+    img: un.png
+  Universidad Pontificia Javeriana:
+    url: https://ingenieria.javeriana.edu.co/investigacion/instituto/nanotecnologia
+    img: Javeriana.png
+  Universidad del Rosario:
+    url: https://www.urosario.edu.co/
+    img: URosario.png
+  
 socials:
   twitter: icons/twitter.png
   youtube: icons/youtube.png
