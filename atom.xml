@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ComplexUD</title>
+  
+  <subtitle>Grupo de Investigación ComplexUD</subtitle>
+  <link href="https://complexud.com/atom.xml" rel="self"/>
+  
+  <link href="https://complexud.com/"/>
+  <updated>2020-08-19T17:15:00.935Z</updated>
+  <id>https://complexud.com/</id>
+  
+  <author>
+    <name>ComplexUD</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fractales</title>
+    <link href="https://complexud.com/investigacion/lineas/fractales/"/>
+    <id>https://complexud.com/investigacion/lineas/fractales/</id>
+    <published>2020-08-19T17:14:38.638Z</published>
+    <updated>2020-08-19T17:15:00.935Z</updated>
+    
+    
+    <summary type="html">Este es el post de los fractales, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit quas aliquid quam rerum exercitationem.</summary>
+    
+    
+    
+    <category term="investigacion" scheme="https://complexud.com/categories/investigacion/"/>
+    
+    <category term="lineas" scheme="https://complexud.com/categories/investigacion/lineas/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Termodinamica</title>
+    <link href="https://complexud.com/investigacion/lineas/termodinamica/"/>
+    <id>https://complexud.com/investigacion/lineas/termodinamica/</id>
+    <published>2020-08-19T17:11:50.060Z</published>
+    <updated>2020-08-19T17:11:50.060Z</updated>
+    
+    
+    <summary type="html">Este es el post de Termodinámica, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit quas aliquid quam rerum exercitationem.</summary>
+    
+    
+    
+    <category term="investigacion" scheme="https://complexud.com/categories/investigacion/"/>
+    
+    <category term="lineas" scheme="https://complexud.com/categories/investigacion/lineas/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Musica</title>
+    <link href="https://complexud.com/investigacion/lineas/musica/"/>
+    <id>https://complexud.com/investigacion/lineas/musica/</id>
+    <published>2020-08-19T17:11:50.056Z</published>
+    <updated>2020-08-19T17:11:50.056Z</updated>
+    
+    
+    <summary type="html">Este es el post de Musica, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit quas aliquid quam rerum exercitationem.</summary>
+    
+    
+    
+    <category term="investigacion" scheme="https://complexud.com/categories/investigacion/"/>
+    
+    <category term="lineas" scheme="https://complexud.com/categories/investigacion/lineas/"/>
+    
+    
+  </entry>
+  
+</feed>
