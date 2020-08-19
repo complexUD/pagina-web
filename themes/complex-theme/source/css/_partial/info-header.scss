@@ -19,17 +19,21 @@
     display: flex;
     align-items: center;
 
-    @include media-max-height(400px) {
+    // Mobile Landscape (Aprox)
+    @media (max-height: 360px) {
         height: auto;
     }
 
+    height: 100vh;
+
+    // Tablet Landscape (Aprox)
     @include media-md {
-        @include media-max-height(450px) {
+        @media (max-height: 450px) {
             height: auto;
         }
-    }
 
-    height: 100vh;
+        height: 100vh;
+    }
 }
 
 .info-align-header {

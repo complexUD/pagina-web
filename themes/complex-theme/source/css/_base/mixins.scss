@@ -22,12 +22,6 @@
     }
 }
 
-@mixin media-max-height($h) {
-    @media (max-height: $h) {
-        @content;
-    }
-}
-
 @mixin if-landscape {
     @media (orientation: landscape) {
         @content;
