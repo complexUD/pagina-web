@@ -1,7 +1,7 @@
 - let currentClass = is_home() ? 'fixed-top nav-index' : 'sticky-top'
 nav#navbar(class=currentClass).navbar.navbar-expand-lg.nav-stylex
   a.navbar-brand(href=url_for(config.root))
-    img.logo-cx(src=url_for(theme.logo), alt='UDistrital')
+    img.logo-cx(src=url_for(theme.logo), alt=config.title + ' Logo')
     span.brand-cx #{config.title}
 
   button.navbar-toggler.toggler-cx(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
@@ -27,3 +27,7 @@ nav#navbar(class=currentClass).navbar.navbar-expand-lg.nav-stylex
         else
           li.nav-item
             a.nav-link(href=url_for(value) class={active: is_current(value)}) #{ key }
+
+      li.nav-item
+        a.nav-link(href="#")
+          span: i.fas.fa-search
