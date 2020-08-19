@@ -21,14 +21,15 @@ block mainContent
           - let categoriesFilter = ['lineas']
           - let lineasPosts = site.posts.filter(post => post.categories.filter(cat => categoriesFilter.includes(cat.name)).length > 0)
           each post, indx in lineasPosts.toArray()
-            .carousel-item(class={active: !indx})
-              .carousel-index-item
-                a(href=url_for(post.path)).carousel-index-link
-                  img.carousel-index-image(src=url_for(post.path)+post.img, alt=post.title)
-                .carousel-index-caption
-                  h2= post.title
-                  p= post.excerpt
-                  a(href=url_for(post.path)).btn.btn-sec ver más
+            if post.img
+              .carousel-item(class={active: !indx})
+                .carousel-index-item
+                  a(href=url_for(post.path)).carousel-index-link
+                    img.carousel-index-image(src=url_for(post.path)+post.img, alt=post.title)
+                  .carousel-index-caption
+                    h2= post.title
+                    p= post.excerpt
+                    a(href=url_for(post.path)).btn.btn-sec ver más
 
         a.carousel-index-prev(href='#carouselLineas', role='button', data-slide='prev')
           span.carousel-index-control
