@@ -10,12 +10,37 @@ block mainContent
           p.info-align-text Somos un Grupo de Investigación de la Universidad Distrital que nos interesamos por ahondar en el estudio de las Ciencias de la Complejidad.
           .btns-header
             a(href=url_for('about')).btn.btn-cta Conócenos
-            a(href=url_for('members')).btn.btn-ghost Explora
+            a(href=url_for('/')).btn.btn-ghost Explora
+
+  section.lineas-investigacion
+    .container
+      h2 Lineas de Investigación
+      p Las líneas de investigación se fundamentan en la tradición investigadora y desde los que se originan proyectos cuyos resultados guardan relación entre sí
+      #carouselLineas.carousel.slide.carousel-index(data-ride='carousel')
+        .carousel-inner
+          - let categoriesFilter = ['lineas']
+          - let lineasPosts = site.posts.filter(post => post.categories.filter(cat => categoriesFilter.includes(cat.name)).length > 0)
+          each post, indx in lineasPosts.toArray()
+            .carousel-item(class={active: !indx})
+              .carousel-index-item
+                a(href=url_for(post.path)).carousel-index-link
+                  img.carousel-index-image(src=url_for(post.path)+post.img, alt=post.title)
+                .carousel-index-caption
+                  h2= post.title
+                  p= post.excerpt
+                  a(href=url_for(post.path)).btn.btn-sec ver más
+
+        a.carousel-index-prev(href='#carouselLineas', role='button', data-slide='prev')
+          span.carousel-index-control
+            span.carousel-control-prev-icon(aria-hidden='true')
+        a.carousel-index-next(href='#carouselLineas', role='button', data-slide='next')
+          span.carousel-index-control
+            span.carousel-control-next-icon(aria-hidden='true')
 
   section.illutrations
     .container
       .row.illustration-section
-        .col-10.col-md-4.order-md-2.py-3
+        .col-10.col-md-6.col-lg-4.order-md-2.py-3
           .illustration-info
             h2 Proyectos de Investigación
             p Nuestros estudiantes, asociados y profesores, cuentan con un espacio en el que el trabajo colaborativo y la experiencia son unas de las muchas herramientas que tienen a disposición para sus proyectos.
@@ -24,7 +49,7 @@ block mainContent
           img(src=url_for('images/proyectos.svg'), alt="proyectos")
 
       .row.illustration-section
-        .col-10.col-md-4.py-3
+        .col-10.col-md-6.col-lg-4.py-3
           .illustration-info
             h2 Eventos Académicos
             p Cada semestre, el grupo cuenta con una serie de Seminarios y Charlas en las que aprenderás sobre las Ciencias de la Complejidad de la mano de expertos.
@@ -33,7 +58,7 @@ block mainContent
           img(src=url_for('images/eventos.svg'), alt="eventos")
 
       .row.illustration-section
-        .col-10.col-md-4.order-md-2.py-3
+        .col-10.col-md-6.col-lg-4.order-md-2.py-3
           .illustration-info
             h2 Aprende con Nosotros
             p Aprende junto a nuestros tutores del grupo, toda la teoría básica para sumergirte en este fantástico mundo de las Ciencias Complejas.
