@@ -38,10 +38,6 @@
 // Collapse
 .dual-collapse2 {
     text-align: center;
-
-    @include media-lg {
-        padding-bottom: 0;
-    }
 }
 
 // Links
@@ -62,6 +58,12 @@
 
 .dropdown-cx-menu {
     background-color: $primary;
+    text-align: center;
+
+    @include media-lg {
+        text-align: left;
+    }
+
 }
 
 .dropdown-cx-item {
@@ -85,7 +87,7 @@
 // Navbar Styles for index
 .nav-index {
     box-shadow: $not-shadow;
-    background: $navbar-gradiant-index;
+    background: transparent;
 
     .logo-cx {
         height: $brand-height-index;
@@ -107,12 +109,20 @@
         font-size: $brand-font-size-index;
     }
 
+    .dual-collapse2 {
+        margin-top: 5px;
+        padding: 1em;
+        background-color: rgba($primary-dark, 0.95);
+
+        @include media-lg {
+            margin-top: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+
     .nav-link {
         font-size: 1.125em;
         color: $white;
-    }
-
-    .dual-collapse2 {
-        padding-bottom: 1em;
     }
 }
