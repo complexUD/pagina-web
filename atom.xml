@@ -6,7 +6,7 @@
   <link href="https://complexud.com/atom.xml" rel="self"/>
   
   <link href="https://complexud.com/"/>
-  <updated>2020-08-19T17:15:00.935Z</updated>
+  <updated>2020-08-20T00:18:19.903Z</updated>
   <id>https://complexud.com/</id>
   
   <author>
@@ -17,14 +17,54 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Fractales</title>
-    <link href="https://complexud.com/investigacion/lineas/fractales/"/>
-    <id>https://complexud.com/investigacion/lineas/fractales/</id>
-    <published>2020-08-19T17:14:38.638Z</published>
-    <updated>2020-08-19T17:15:00.935Z</updated>
+    <title>Iam anyone</title>
+    <link href="https://complexud.com/members/member-anyone/"/>
+    <id>https://complexud.com/members/member-anyone/</id>
+    <published>2020-08-20T00:18:19.903Z</published>
+    <updated>2020-08-20T00:18:19.903Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>]]></content>
     
     
-    <summary type="html">Este es el post de los fractales, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit quas aliquid quam rerum exercitationem.</summary>
+    <summary type="html">Este ha sido un proyecto para exponer diferentes creaciones</summary>
+    
+    
+    <content src="https://complexud.com/images/header.jpg" type="image"/>
+    
+    
+    <category term="members" scheme="https://complexud.com/categories/members/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Iam anyone</title>
+    <link href="https://complexud.com/members/member-test/"/>
+    <id>https://complexud.com/members/member-test/</id>
+    <published>2020-08-20T00:18:19.903Z</published>
+    <updated>2020-08-20T00:18:19.903Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    <summary type="html">Este ha sido un proyecto para exponer diferentes creaciones</summary>
+    
+    
+    <content src="https://complexud.com/images/header.jpg" type="image"/>
+    
+    
+    <category term="members" scheme="https://complexud.com/categories/members/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Logistica Hospitalaria</title>
+    <link href="https://complexud.com/investigacion/lineas/logistica-hospitalaria/"/>
+    <id>https://complexud.com/investigacion/lineas/logistica-hospitalaria/</id>
+    <published>2020-08-20T00:18:19.903Z</published>
+    <updated>2020-08-20T00:18:19.903Z</updated>
+    
     
     
     
@@ -36,14 +76,12 @@
   </entry>
   
   <entry>
-    <title>Termodinamica</title>
-    <link href="https://complexud.com/investigacion/lineas/termodinamica/"/>
-    <id>https://complexud.com/investigacion/lineas/termodinamica/</id>
-    <published>2020-08-19T17:11:50.060Z</published>
-    <updated>2020-08-19T17:11:50.060Z</updated>
+    <title>Problemas de Transporte</title>
+    <link href="https://complexud.com/investigacion/lineas/problemas-transporte/"/>
+    <id>https://complexud.com/investigacion/lineas/problemas-transporte/</id>
+    <published>2020-08-20T00:18:19.903Z</published>
+    <updated>2020-08-20T00:18:19.903Z</updated>
     
-    
-    <summary type="html">Este es el post de Termodinámica, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit quas aliquid quam rerum exercitationem.</summary>
     
     
     
@@ -55,14 +93,63 @@
   </entry>
   
   <entry>
-    <title>Musica</title>
-    <link href="https://complexud.com/investigacion/lineas/musica/"/>
-    <id>https://complexud.com/investigacion/lineas/musica/</id>
-    <published>2020-08-19T17:11:50.056Z</published>
-    <updated>2020-08-19T17:11:50.056Z</updated>
+    <title>Complejidad en las Organizaciones</title>
+    <link href="https://complexud.com/investigacion/lineas/complejidad-organizaciones/"/>
+    <id>https://complexud.com/investigacion/lineas/complejidad-organizaciones/</id>
+    <published>2020-08-20T00:18:19.899Z</published>
+    <updated>2020-08-20T00:18:19.899Z</updated>
     
     
-    <summary type="html">Este es el post de Musica, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit quas aliquid quam rerum exercitationem.</summary>
+    
+    
+    <category term="investigacion" scheme="https://complexud.com/categories/investigacion/"/>
+    
+    <category term="lineas" scheme="https://complexud.com/categories/investigacion/lineas/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Comportamientos Colectivos</title>
+    <link href="https://complexud.com/investigacion/lineas/comportamientos-colectivos/"/>
+    <id>https://complexud.com/investigacion/lineas/comportamientos-colectivos/</id>
+    <published>2020-08-20T00:18:19.899Z</published>
+    <updated>2020-08-20T00:18:19.899Z</updated>
+    
+    
+    
+    
+    <category term="investigacion" scheme="https://complexud.com/categories/investigacion/"/>
+    
+    <category term="lineas" scheme="https://complexud.com/categories/investigacion/lineas/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Informatica Educativa</title>
+    <link href="https://complexud.com/investigacion/lineas/informatica-educativa/"/>
+    <id>https://complexud.com/investigacion/lineas/informatica-educativa/</id>
+    <published>2020-08-20T00:18:19.899Z</published>
+    <updated>2020-08-20T00:18:19.899Z</updated>
+    
+    
+    
+    
+    <category term="investigacion" scheme="https://complexud.com/categories/investigacion/"/>
+    
+    <category term="lineas" scheme="https://complexud.com/categories/investigacion/lineas/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ingenieria de Sistemas Complejos</title>
+    <link href="https://complexud.com/investigacion/lineas/ingenieria-sistemas-complejos/"/>
+    <id>https://complexud.com/investigacion/lineas/ingenieria-sistemas-complejos/</id>
+    <published>2020-08-20T00:18:19.899Z</published>
+    <updated>2020-08-20T00:18:19.899Z</updated>
+    
     
     
     

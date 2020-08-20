@@ -2,44 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://complexud.com/investigacion/lineas/fractales/</loc>
+    <loc>https://complexud.com/members/member-anyone/</loc>
     
-    <lastmod>2020-08-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://complexud.com/404.html</loc>
-    
-    <lastmod>2020-08-19</lastmod>
+    <lastmod>2020-08-20</lastmod>
     
   </url>
   
   <url>
-    <loc>https://complexud.com/investigacion/lineas/termodinamica/</loc>
+    <loc>https://complexud.com/members/member-test/</loc>
     
-    <lastmod>2020-08-19</lastmod>
+    <lastmod>2020-08-20</lastmod>
     
   </url>
   
   <url>
-    <loc>https://complexud.com/investigacion/lineas/musica/</loc>
+    <loc>https://complexud.com/investigacion/lineas/logistica-hospitalaria/</loc>
     
-    <lastmod>2020-08-19</lastmod>
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/investigacion/lineas/problemas-transporte/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
     
   </url>
   
   <url>
     <loc>https://complexud.com/about/index.html</loc>
     
-    <lastmod>2020-08-19</lastmod>
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/investigacion/lineas/complejidad-organizaciones/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/investigacion/lineas/comportamientos-colectivos/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/investigacion/lineas/informatica-educativa/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/investigacion/lineas/ingenieria-sistemas-complejos/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/404.html</loc>
+    
+    <lastmod>2020-08-20</lastmod>
     
   </url>
   
 
   <url>
     <loc>https://complexud.com/</loc>
-    <lastmod>2020-08-19</lastmod>
+    <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -48,15 +83,22 @@
 
   
   <url>
+    <loc>https://complexud.com/categories/members/</loc>
+    <lastmod>2020-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://complexud.com/categories/investigacion/</loc>
-    <lastmod>2020-08-19</lastmod>
+    <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://complexud.com/categories/investigacion/lineas/</loc>
-    <lastmod>2020-08-19</lastmod>
+    <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

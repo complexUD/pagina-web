@@ -380,6 +380,7 @@ img {
   display: flex; }
 
 .carousel-index-link {
+  width: 100%;
   display: block; }
   @media (min-width: 992px) {
     .carousel-index-link {
@@ -394,13 +395,15 @@ img {
 .carousel-index-caption {
   position: absolute;
   z-index: 10;
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  background-color: #0007;
+  padding: 5px;
   color: #fff;
   text-align: center; }
   .carousel-index-caption h2 {
+    font-size: 1.5rem;
     font-weight: bold; }
   .carousel-index-caption .btn-sec {
     display: none; }
@@ -409,16 +412,19 @@ img {
       position: static;
       z-index: 0;
       transform: translateX(0);
+      background-color: #0000;
       text-align: left;
       color: #4a688c;
       padding: 2em;
+      padding-right: 3em;
       width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      .carousel-index-caption h2 {
+        font-size: 2rem; }
       .carousel-index-caption p {
-        margin: 30px 0;
-        width: 80%; }
+        margin: 30px 0; }
       .carousel-index-caption .btn-sec {
         width: 150px;
         display: block; } }
