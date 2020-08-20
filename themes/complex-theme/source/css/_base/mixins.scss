@@ -22,6 +22,18 @@
     }
 }
 
+@mixin if-landscape {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin if-portrait {
+    @media (orientation: portrait) {
+        @content;
+    }
+}
+
 @mixin navbar-transition($properties...) {
     transition-property: $properties;
     transition-duration: 400ms;

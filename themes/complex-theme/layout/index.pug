@@ -1,61 +1,76 @@
 extends base/layout.pug
 block mainContent
-  .info-panel-header
-    .info-header
-      .info-align-header
-        h1 #{config.title}
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        .btns-header
-          button.btnx.btn-blck(type='button') Conocenos
-          button.btnx.btn-wht(type='button') Explora
-    img.header-img(src='images/header.jpg', alt='Header')
+  //- Cover Section
+  section.info-header
+    img.info-header-img(src=url_for('images/fondo-cover-min.jpeg'), alt='Header')
+    .info-header-content
+      .container
+        .info-align-header
+          h1.info-align-title #{config.title}
+          p.info-align-text Somos un Grupo de Investigación de la Universidad Distrital que nos interesamos por ahondar en el estudio de las Ciencias de la Complejidad.
+          .btns-header
+            a(href=url_for('about')).btn.btn-cta Conócenos
+            a(href=url_for('#')).btn.btn-ghost Explora
 
-  .container.py-3
-    .half-panel
-      h1 Set a test Title
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    hr
-    .half-panel
-      .image-panel
-        img.main-img(src='images/header.jpg', alt='Header')
-      .image-info-panel
-        .info-main
-          h1 Title Section
-          p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          | enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          | nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          | pariatur.
-          button.btnx.btn-wht(type='button') Learn More
-    hr
-    .half-panel
-      .image-info-panel
-        .info-main
-          h1 Title Section
-          p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          | enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          | nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          | pariatur.
-          button.btnx.btn-wht(type='button') Learn More
-      .image-panel
-        img.main-img(src='images/header.jpg', alt='Header')
-    hr
-    .half-panel
-      .image-panel
-        img.main-img(src='images/header.jpg', alt='Header')
-      .image-info-panel
-        .info-main
-          h1 Title Section
-          p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          | enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          | nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          | reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          | pariatur.
-          button.btnx.btn-wht(type='button') Learn More
+  section.lineas-investigacion
+    .container
+      h2 Lineas de Investigación
+      p Las líneas de investigación se fundamentan en la tradición investigadora y desde los que se originan proyectos cuyos resultados guardan relación entre sí
+      #carouselLineas.carousel.slide.carousel-index(data-ride='carousel')
+        .carousel-inner
+          - let categoriesFilter = ['lineas']
+          - let lineasPosts = site.posts.filter(post => post.categories.filter(cat => categoriesFilter.includes(cat.name)).length > 0)
+          each post, indx in lineasPosts.toArray()
+            if post.img
+              .carousel-item(class={active: !indx})
+                .carousel-index-item
+                  a(href=url_for(post.path)).carousel-index-link
+                    img.carousel-index-image(src=url_for(post.path)+post.img, alt=post.title)
+                  .carousel-index-caption
+                    h2= post.title
+                    p= post.excerpt
+                    a(href=url_for(post.path)).btn.btn-sec ver más
+
+        a.carousel-index-prev(href='#carouselLineas', role='button', data-slide='prev')
+          span.carousel-index-control
+            span.carousel-control-prev-icon(aria-hidden='true')
+        a.carousel-index-next(href='#carouselLineas', role='button', data-slide='next')
+          span.carousel-index-control
+            span.carousel-control-next-icon(aria-hidden='true')
+
+  section.illutrations
+    .container
+      .row.illustration-section
+        .col-10.col-md-6.col-lg-4.order-md-2.py-3
+          .illustration-info
+            h2 Proyectos de Investigación
+            p Nuestros estudiantes, asociados y profesores, cuentan con un espacio en el que el trabajo colaborativo y la experiencia son unas de las muchas herramientas que tienen a disposición para sus proyectos.
+            a(href=url_for('#')).btn.btn-sec Ver Más
+        .col-10.col-md-5.py-3
+          img(src=url_for('images/proyectos.svg'), alt="proyectos")
+
+      .row.illustration-section
+        .col-10.col-md-6.col-lg-4.py-3
+          .illustration-info
+            h2 Eventos Académicos
+            p Cada semestre, el grupo cuenta con una serie de Seminarios y Charlas en las que aprenderás sobre las Ciencias de la Complejidad de la mano de expertos.
+            a(href=url_for('#')).btn.btn-sec Ver Más
+        .col-10.col-md-5.py-3
+          img(src=url_for('images/eventos.svg'), alt="eventos")
+
+      .row.illustration-section
+        .col-10.col-md-6.col-lg-4.order-md-2.py-3
+          .illustration-info
+            h2 Aprende con Nosotros
+            p Aprende junto a nuestros tutores del grupo, toda la teoría básica para sumergirte en este fantástico mundo de las Ciencias Complejas.
+            a(href=url_for('#')).btn.btn-sec Ver Más
+        .col-10.col-md-5.py-3
+          img(src=url_for('images/aprende.svg'), alt="aprende")
+
+    img(src=url_for('images/rectangle-curve.png'), alt="rectangle-curve").illustrations-foot
+
+  section.sponsors
+    each sp, spName in theme.sponsors
+      .sponsor-info
+        a(href=sp.url, target="_blank", rel="noopener noreferrer")
+          img(src=url_for('images/aliados/' + sp.img), alt= spName)

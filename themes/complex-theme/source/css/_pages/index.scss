@@ -1,0 +1,211 @@
+/* #region Carousel Section */
+.lineas-investigacion {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.carousel-index {
+    box-shadow: $shadow;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.carousel-index-item {
+    display: flex;
+}
+
+.carousel-index-link {
+    width: 100%;
+    display: block;
+
+    @include media-lg {
+        width: 50%;
+    }
+}
+
+.carousel-index-image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-index-caption {
+    position: absolute;
+    z-index: 10;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #0007;
+    padding: 5px;
+
+    color: $white;
+    text-align: center;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .btn-sec {
+        display: none;
+    }
+
+    @include media-lg {
+        position: static;
+        z-index: 0;
+        transform: translateX(0);
+
+        background-color: #0000;
+
+        text-align: left;
+        color: $primary;
+
+        padding: 2em;
+        padding-right: 3em;
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            margin: 30px 0;
+        }
+
+        .btn-sec {
+            width: 150px;
+            display: block;
+        }
+    }
+}
+
+%carousel-controls {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover .carousel-index-control {
+        opacity: 1;
+    }
+}
+
+.carousel-index-control {
+    background-color: $secondary;
+    padding: 2em 1em;
+    border-radius: 5px;
+
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-index-prev {
+    @extend %carousel-controls;
+    left: 0;
+}
+
+.carousel-index-next {
+    @extend %carousel-controls;
+    right: 0;
+}
+
+/* #endregion */
+/* #region Illustations Sections */
+.illutrations {
+    background: $gradiant;
+}
+
+.illustrations-foot {
+    object-fit: cover;
+    width: 100%;
+    height: 60px
+}
+
+.illustration-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    @include media-md {
+        text-align: left;
+        padding: 60px 0;
+
+        &:nth-child(even) .illustration-info {
+            text-align: right;
+        }
+    }
+}
+
+.illustration-info p {
+    margin: 1em 0;
+}
+
+.btn-sec {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    margin: 0;
+
+    background-color: $secondary;
+    color: $white;
+
+    &:hover {
+        background-color: $secondary-dark;
+        color: $white;
+    }
+}
+
+/* #endregion */
+/* #region Sponsors Section*/
+.sponsors {
+    overflow: auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+
+    // Custom scrollbars
+    scrollbar-color: $primary-dark $primary-lighten;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        height: 5px;
+        background-color: $primary-lighten;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $primary-dark;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: $primary;
+    }
+
+}
+
+.sponsor-info {
+    padding: 10px 1em;
+    flex-shrink: 0;
+
+    img {
+        height: 100px;
+        filter: grayscale(100%);
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+}
+
+/* #endregion */
