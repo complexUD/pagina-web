@@ -4,10 +4,10 @@ url:
 menu:
   Conócenos:
     Misión y Visión: /about
-    Miembros: '#'
+    Miembros: /miembros
     Reconocimientos: '#'
   Investigación:
-    Lineas de Investigación: '#'
+    Lineas de Investigación: investigacion/lineas
     Proyectos: '#'
     Investigadores: '#'
   Eventos:

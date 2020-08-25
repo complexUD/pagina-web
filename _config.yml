@@ -100,20 +100,20 @@ deploy:
   branch: 'gh-pages'
 
 index2_generator:
-  # Example
-  # - layout: 'archive' # use existing archive layout
-  #   path: 'example' # output to example folder: http://127.0.0.1:4000/example/
-  #   per_page: 10
-  #   order_by: -date
-  #   include:
-  #     - tag example # include article which tag is example
-  # 
-  - layout: 'pages/members' # use existing archive layout
-    path: 'members' # output to web folder: http://127.0.0.1:4000/web/
-    per_page: 10
-    order_by: -date
+  - layout: archive
+    path: miembros
     include:
-      - category members # include article which category is Web
+      - category miembros
+
+  - layout: archive
+    path: investigacion
+    include:
+      - category investigacion
+  
+  - layout: archive
+    path: investigacion/lineas
+    include:
+      - category lineas
 
 # hexo-auto-category
 auto_category:
