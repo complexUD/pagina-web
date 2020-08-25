@@ -26,8 +26,8 @@ footerMenu:
     Historia: '#'
     Normatividad: '#'
   Investigación:
-    Investigadores: '#'
-    Lineas de Investigación: '#'
+    Investigadores: miembros
+    Lineas de Investigación: investigacion/lineas
     Proyectos: '#'
     Semillero: '#'
   Eventos:

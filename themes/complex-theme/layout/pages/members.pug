@@ -1,12 +1,18 @@
 extends ../base/layout.pug
 
 block mainContent
+  //- No es necesario el breadcrumb
+  +breadcrumb()
   .container.py-3
-    hr
     h3 Integrantes
     hr
-    include ../mixins/members.pug
-    +members(page.posts)
-    //- hr
-    //- include ../mixins/paginator.pug
-    //- +paginator_indexed()
+    .card-deck
+      each person in page.posts.toArray()
+        - let item = person.data
+        .members-list
+          a.member-link(href=url_for(person.path))
+            .member-info
+              img.mr-3.img-author(src=url_for(person.path + '/' + item.imagen), alt='Header')
+              .info-author
+                h1.name-member #{ item.Nombre }
+    +paginator_indexed()

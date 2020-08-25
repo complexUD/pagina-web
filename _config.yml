@@ -100,7 +100,7 @@ deploy:
   branch: 'gh-pages'
 
 index2_generator:
-  - layout: archive
+  - layout: pages/members
     path: miembros
     include:
       - category miembros
