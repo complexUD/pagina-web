@@ -1,0 +1,10 @@
+-
+  /**
+   * Get a list of post that match with the filter
+   *
+   * @param {list} categoriesFilter The list of categories to filter
+   * @return {list} The list of posts filtered.
+   */
+  function getPostByCategories(categoriesFilter){
+    return site.posts.filter(post => post.categories.filter(cat => categoriesFilter.includes(cat.name)).length > 0)
+  }

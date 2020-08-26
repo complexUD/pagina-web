@@ -1,4 +1,4 @@
-include ../mixins/contenido.pug
+include variables.pug
 
 doctype
 html(lang=config.language)
@@ -7,8 +7,12 @@ html(lang=config.language)
   body
     .root
       include nav.pug
+
       main
+        include ../mixins/contenido.pug
         block mainContent
+
       include suscription.pug
       include footer.pug
+
     include scripts.pug
