@@ -1,0 +1,14 @@
+extends ../base/layout.pug
+
+block mainContent
+  +breadcrumb()
+  .container.py-3
+    h1= toCapitalize(page.title)
+    hr
+    -let categoryName = page.title.split('/').pop()
+    -let categoryId = site.categories.find({name: categoryName}).first()._id
+    -let subCategories = site.categories.filter(cat => cat.parent === categoryId).toArray()
+    each subCategory in subCategories
+      .card.subCategories
+        h2.card-title= toCapitalize(subCategory.name)
+        a(href=url_for(`${categoryName}/${subCategory.name}`)).stretched-link

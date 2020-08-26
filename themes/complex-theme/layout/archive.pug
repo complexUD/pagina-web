@@ -6,8 +6,7 @@ block mainContent
     if is_archive()
       h1= 'Archivo'
     if is_home2()
-      -let pageTitle = page.title.split('/').pop()
-      h1= pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)
+      h1= toCapitalize(page.title.split('/').pop())
 
     hr
     +post_list()

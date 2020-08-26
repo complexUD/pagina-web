@@ -95,18 +95,23 @@ theme: complex-theme
 deploy:
   type: ''
 
+archive_generator:
+  yearly: false
+  monthly: false
+  daily: false
+
 index2_generator:
   - layout: pages/members
     path: miembros
     include:
       - category miembros
 
-  - layout: archive
+  - layout: pages/metaCategory
     path: investigación
     include:
       - category investigación
   
-  - layout: archive
+  - layout: pages/lineas # Si no existe utiliza el layout de archive
     path: investigación/lineas
     include:
       - category lineas
