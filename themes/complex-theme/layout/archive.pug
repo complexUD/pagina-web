@@ -3,10 +3,12 @@ extends base/layout.pug
 block mainContent
   +breadcrumb()
   .container.py-3
-    if page.title
-      h1= page.title.split('/').pop().toUpperCase()
-    else
+    if is_archive()
       h1= 'Archivo'
+    if is_home2()
+      -let pageTitle = page.title.split('/').pop()
+      h1= pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)
+
     hr
     +post_list()
     +paginator_indexed()

@@ -29,9 +29,7 @@ pretty_urls:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
+archive_dir: archivo
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -104,12 +102,12 @@ index2_generator:
       - category miembros
 
   - layout: archive
-    path: investigacion
+    path: investigación
     include:
-      - category investigacion
+      - category investigación
   
   - layout: archive
-    path: investigacion/lineas
+    path: investigación/lineas
     include:
       - category lineas
 
