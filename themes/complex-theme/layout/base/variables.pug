@@ -1,0 +1,20 @@
+-
+  /**
+   * Get a list of post that match with the filter
+   *
+   * @param {list} categoriesFilter The list of categories to filter
+   * @return {list} The list of posts filtered.
+   */
+  function getPostByCategories(categoriesFilter){
+    return site.posts.filter(post => post.categories.filter(cat => categoriesFilter.includes(cat.name)).length > 0)
+  }
+
+  /**
+   * Capitalice a text
+   *
+   * @param {string} text The string to capitalize
+   * @return {string} The String converted
+   */
+  function toCapitalize(text){
+    return text.charAt(0).toUpperCase() + text.slice(1)
+  }

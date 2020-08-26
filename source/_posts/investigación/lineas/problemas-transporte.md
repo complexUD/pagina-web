@@ -3,6 +3,6 @@ title: Problemas de Transporte
 excerpt: ''
 img: aeropuerto.jpg
 categories:
-  - investigacion
+  - investigación
   - lineas
 ---

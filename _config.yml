@@ -29,9 +29,7 @@ pretty_urls:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
+archive_dir: archivo
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -73,8 +71,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: true
+# https://hexo.io/docs/configuration#Date-Time-format
+updated_option: date
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -97,13 +95,26 @@ theme: complex-theme
 deploy:
   type: ''
 
+archive_generator:
+  yearly: false
+  monthly: false
+  daily: false
+
 index2_generator:
-  - layout: 'pages/members' # use existing archive layout
-    path: 'members' # output to web folder: http://127.0.0.1:4000/web/
-    per_page: 10
-    order_by: -date
+  - layout: pages/members
+    path: miembros
     include:
-      - category members # include article which category is Web
+      - category miembros
+
+  - layout: pages/metaCategory
+    path: investigación
+    include:
+      - category investigación
+  
+  - layout: pages/lineas # Si no existe utiliza el layout de archive
+    path: investigación/lineas
+    include:
+      - category lineas
 
 # hexo-auto-category
 auto_category:
@@ -113,6 +124,7 @@ auto_category:
 feed:
   type: atom
   path: atom.xml
+  icon: /icons/icon.png
   limit: 20
   order_by: -date
   autodiscovery: true

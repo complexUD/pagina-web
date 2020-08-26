@@ -1,8 +1,5 @@
 prev: prev
 next: next
-prev_post: Anterior
-next_post: Siguiente
+prev_post: prev post
+next_post: next ost
 read_more: '&hellip; more'
-untitled: (untitled)
-translate_original: Translate the original address
-meta_description: A Blog Powered By Hexo

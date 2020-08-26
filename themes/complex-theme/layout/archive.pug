@@ -1,12 +1,13 @@
 extends base/layout.pug
 
 block mainContent
+  +breadcrumb()
   .container.py-3
+    if is_archive()
+      h1= 'Archivo'
+    if is_home2()
+      h1= toCapitalize(page.title.split('/').pop())
+
     hr
-    h1 Archivo
-    hr
-    include mixins/post.pug
-    +postList()
-    //- hr
-    //- include mixins/paginator.pug
-    //- +home()
+    +post_list()
+    +paginator_indexed()

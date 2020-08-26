@@ -1,0 +1,93 @@
+//- Static Page
+mixin page()
+  article.page
+    h1.page-title
+      != page.title
+    .page-content
+      != page.content
+
+//- Post Page
+mixin post()
+  article.post
+    h1.post-title
+      != page.title
+    +post_info(page)
+    .post-content
+      != page.content
+
+mixin post_info(article)
+  .post-info
+    time(datetime=date_xml(article.date))
+      != full_date(article.date, config.date_format)
+
+mixin paginator_indexed()
+  if page.total > 1
+    hr
+    nav.paginator
+      ul.pagination
+        li.page-item(class={disabled: !page.prev})
+          a.page-link.prev(href=url_for(page.prev_link))
+            //- != __('prev')
+            i.fas.fa-chevron-left
+
+        li.page-item(class={active: page.current === 1})
+          a.page-link(href=url_for(page.base)) 1
+
+        - let i = 2
+        while i <= page.total
+          li.page-item(class={active: page.current === i})
+            a.page-link(href=url_for(page.base+'/page/'+i))
+              != i++
+
+        li.page-item(class={disabled: !page.next})
+          a.page-link.next(href=url_for(page.next_link))
+            //- != __('next')
+            i.fas.fa-chevron-right
+
+mixin paginator_post()
+  - let prev = page.prev ? page.prev.path : false;
+  - let next = page.next ? page.next.path : false;
+  nav.paginator
+    ul.pagination
+      if prev
+        li.page-item
+          a.page-link.prev(href=url_for(prev))
+            != __('prev_post')
+      if next
+        li.page-item
+          a.page-link.next(href=url_for(next))
+            != __('next_post')
+
+mixin post_list()
+  ul.post-list
+    each item in page.posts.toArray()
+      li.post-list-item
+        article.post-block
+          h5.post-title
+            a.post-title-link(href=url_for(item.path))
+              != item.title
+          +post_info(item)
+          .post-content
+            != item.excerpt
+          a.read-more(href=url_for(item.path))
+            != __('read_more')
+
+mixin breadcrumb()
+  - let breadCrumb = []
+  - if(is_archive() || is_home2()) breadCrumb = page.base.split('/').slice(0, -1)
+  - if(is_post() || is_page()) breadCrumb = page.path.split('/').slice(0, -1)
+
+  nav
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href=url_for('/'))= 'Inicio'
+
+      - let currentPath = ''
+      each localPath in breadCrumb
+        - currentPath += localPath + '/'
+        - pageTitle = localPath.charAt(0).toUpperCase() + localPath.slice(1);
+        if is_current(currentPath, true)
+          li.breadcrumb-item.active= pageTitle
+        else
+          li.breadcrumb-item
+            a(href=url_for(currentPath))= pageTitle

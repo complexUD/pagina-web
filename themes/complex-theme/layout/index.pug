@@ -1,6 +1,6 @@
 extends base/layout.pug
+
 block mainContent
-  //- Cover Section
   section.info-header
     img.info-header-img(src=url_for('images/fondo-cover-min.jpeg'), alt='Header')
     .info-header-content
@@ -9,7 +9,7 @@ block mainContent
           h1.info-align-title #{config.title}
           p.info-align-text Somos un Grupo de Investigación de la Universidad Distrital que nos interesamos por ahondar en el estudio de las Ciencias de la Complejidad.
           .btns-header
-            a(href=url_for('about')).btn.btn-cta Conócenos
+            a(href=url_for('conócenos')).btn.btn-cta Conócenos
             a(href=url_for('#')).btn.btn-ghost Explora
 
   section.lineas-investigacion
@@ -18,8 +18,7 @@ block mainContent
       p Las líneas de investigación se fundamentan en la tradición investigadora y desde los que se originan proyectos cuyos resultados guardan relación entre sí
       #carouselLineas.carousel.slide.carousel-index(data-ride='carousel')
         .carousel-inner
-          - let categoriesFilter = ['lineas']
-          - let lineasPosts = site.posts.filter(post => post.categories.filter(cat => categoriesFilter.includes(cat.name)).length > 0)
+          - let lineasPosts = getPostByCategories(['lineas'])
           each post, indx in lineasPosts.toArray()
             if post.img
               .carousel-item(class={active: !indx})
