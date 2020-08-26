@@ -74,7 +74,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+use_date_for_updated: true
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -95,9 +95,7 @@ theme: complex-theme
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: 'git'
-  repo: 'https://github.com/GrupoComplejidadUD/pagina-web'
-  branch: 'gh-pages'
+  type: ''
 
 index2_generator:
   - layout: pages/members
@@ -131,5 +129,5 @@ feed:
 sitemap:
   path: sitemap.xml
   rel: true
-  tags: true
-  categories: true
+  tags: false
+  categories: false
