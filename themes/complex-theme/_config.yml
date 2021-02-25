@@ -7,9 +7,10 @@ menu:
     Historia: /historia
     Objetivos: /objetivos
   Investigación:
+    Investigadores: /investigadores
     Lineas de Investigación: investigación/lineas
     Proyectos: '#'
-    Investigadores: /investigadores
+    Productividad: /productividad
   Eventos:
     Seminarios: '#'
     Congresos: '#'
@@ -29,7 +30,8 @@ footerMenu:
     Investigadores: /investigadores
     Lineas de Investigación: investigación/lineas
     Proyectos: '#'
-    Semillero: '#'
+    Semillero: /convocatorias
+    Productividad: /productividad
   Eventos:
     Seminarios: '#'
     Congresos: '#'
