@@ -12,12 +12,9 @@ menu:
     Publicaciones: /publicaciones
     Productividad: /productividad
   Eventos:
-    Seminarios: '#'
-    Congresos: '#'
-    Encuentros: '#'
-    Conversatorios: '#'
-  Aprende:
-    Convocatorias: /convocatorias
+    Seminarios: /seminarios
+    Sustentaciones: /sustentaciones
+  Convocatorias: /convocatorias
   # RSS: /atom.xml
 
 footerMenu:
@@ -25,18 +22,15 @@ footerMenu:
     Mision: /conócenos
     Vision: /conócenos
     Historia: /historia
-    Objetivos: '#'
+    Objetivos: /objetivos
   Investigación:
     Investigadores: /investigadores
     Lineas de Investigación: investigación/lineas
     Publicaciones: /publicaciones
-    Semillero: /convocatorias
     Productividad: /productividad
   Eventos:
-    Seminarios: '#'
-    Congresos: '#'
-    Encuentros: '#'
-    Conversatorios: '#'
+    Seminarios: /seminarios
+    Sustentaciones: /sustentaciones
 
 logo: favicon.ico
 favicon: favicon.ico
