@@ -4,12 +4,12 @@ url:
 menu:
   Conócenos:
     Misión y Visión: /conócenos
-    Miembros: /miembros
-    Reconocimientos: '#'
+    Historia: /historia
+    Objetivos: /objetivos
   Investigación:
     Lineas de Investigación: investigación/lineas
     Proyectos: '#'
-    Investigadores: '#'
+    Investigadores: /investigadores
   Eventos:
     Seminarios: '#'
     Congresos: '#'
@@ -23,10 +23,10 @@ footerMenu:
   Conócenos:
     Mision: /conócenos
     Vision: /conócenos
-    Historia: '#'
-    Normatividad: '#'
+    Historia: /historia
+    Objetivos: '#'
   Investigación:
-    Investigadores: miembros
+    Investigadores: /investigadores
     Lineas de Investigación: investigación/lineas
     Proyectos: '#'
     Semillero: '#'
