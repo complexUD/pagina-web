@@ -8,7 +8,7 @@ menu:
     Objetivos: /objetivos
   Investigación:
     Investigadores: /investigadores
-    Lineas de Investigación: investigación/lineas
+    Lineas de Investigación: investigacion/lineas
     Publicaciones: /publicaciones
     Productividad: /productividad
   Eventos:
@@ -25,7 +25,7 @@ footerMenu:
     Objetivos: /objetivos
   Investigación:
     Investigadores: /investigadores
-    Lineas de Investigación: investigación/lineas
+    Lineas de Investigación: investigacion/lineas
     Publicaciones: /publicaciones
     Productividad: /productividad
   Eventos:

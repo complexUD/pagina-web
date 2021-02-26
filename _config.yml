@@ -107,12 +107,12 @@ index2_generator:
       - category miembros
 
   - layout: pages/metaCategory
-    path: investigación
+    path: investigacion
     include:
-      - category investigación
+      - category investigacion
   
   - layout: pages/lineas # Si no existe utiliza el layout de archive
-    path: investigación/lineas
+    path: investigacion/lineas
     include:
       - category lineas
 
