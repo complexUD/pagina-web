@@ -1,0 +1,9 @@
+script.
+  const pathsLists = !{JSON.stringify(site.pages.toArray().map(page => page.path))};
+  const randomBtn  = document.getElementById('random-page-btn')
+  randomBtn.addEventListener('click', () => {
+    const randomPage = parseInt(Math.random()*(pathsLists.length));
+    const rediretPage = pathsLists[randomPage].replace(/index.html$/g, '')
+    location.href = rediretPage;
+  })
+
