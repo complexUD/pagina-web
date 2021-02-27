@@ -4,37 +4,33 @@ url:
 menu:
   Conócenos:
     Misión y Visión: /conócenos
-    Miembros: /miembros
-    Reconocimientos: '#'
+    Historia: /historia
+    Objetivos: /objetivos
   Investigación:
-    Lineas de Investigación: investigación/lineas
-    Proyectos: '#'
-    Investigadores: '#'
+    Investigadores: /investigadores
+    Lineas de Investigación: investigacion/lineas
+    Publicaciones: /publicaciones
+    Productividad: /productividad
   Eventos:
-    Seminarios: '#'
-    Congresos: '#'
-    Encuentros: '#'
-    Conversatorios: '#'
-  Aprende:
-    Convocatorias: '#'
+    Seminarios: /seminarios
+    Sustentaciones: /sustentaciones
+  Convocatorias: /convocatorias
   # RSS: /atom.xml
 
 footerMenu:
   Conócenos:
     Mision: /conócenos
     Vision: /conócenos
-    Historia: '#'
-    Normatividad: '#'
+    Historia: /historia
+    Objetivos: /objetivos
   Investigación:
-    Investigadores: miembros
-    Lineas de Investigación: investigación/lineas
-    Proyectos: '#'
-    Semillero: '#'
+    Investigadores: /investigadores
+    Lineas de Investigación: investigacion/lineas
+    Publicaciones: /publicaciones
+    Productividad: /productividad
   Eventos:
-    Seminarios: '#'
-    Congresos: '#'
-    Encuentros: '#'
-    Conversatorios: '#'
+    Seminarios: /seminarios
+    Sustentaciones: /sustentaciones
 
 logo: favicon.ico
 favicon: favicon.ico

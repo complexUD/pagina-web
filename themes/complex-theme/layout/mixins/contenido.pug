@@ -66,11 +66,12 @@ mixin post_list()
           h5.post-title
             a.post-title-link(href=url_for(item.path))
               != item.title
-          +post_info(item)
-          .post-content
-            != item.excerpt
-          a.read-more(href=url_for(item.path))
-            != __('read_more')
+          //- +post_info(item)
+          if item.excerpt
+            .post-content
+              != item.excerpt
+            a.read-more(href=url_for(item.path))
+              != __('read_more')
 
 mixin breadcrumb()
   - let breadCrumb = []
