@@ -4,6 +4,11 @@ script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.
 
 if is_home()
   script(src=url_for('/js/index.js'))
+script(src=url_for('/js/to-top.js'))
+
+//- Suscription Scripts
+script(src='https://www.google.com/recaptcha/api.js' async defer)
+script(src=url_for('/js/submit-form.js'))
 
 //- LaTex
 if theme.mathjax

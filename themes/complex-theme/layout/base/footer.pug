@@ -28,10 +28,13 @@ footer.main-footer
             img(src=url_for('/icons/udistrital_esc.png'), alt="Logo Complexud")
 
         .copyright
-          - var currentDate = new Date();
-          - var currentYear = currentDate.getFullYear();
-          - var copyrightYear = ! theme.copyright.since || currentYear == theme.copyright.since ? currentYear : theme.copyright.since + ' - ' + currentYear;
-          - var copyrightURL = theme.copyright.url || config.root
-          - var copyrightName = theme.copyright.name || config.author
+          - let currentDate = new Date();
+          - let currentYear = currentDate.getFullYear();
+          - let copyrightYear = ! theme.copyright.since || currentYear == theme.copyright.since ? currentYear : theme.copyright.since + ' - ' + currentYear;
+          - let copyrightURL = theme.copyright.url || config.root
+          - let copyrightName = theme.copyright.name || config.author
           small &copy; #{copyrightYear} #[a(href=copyrightURL) #{copyrightName}]
             |  / Powered by #[a(href='https://hexo.io/', target='_blank') Hexo]
+          br
+          small The feed is available via&nbsp;
+            a(href=url_for('/atom.xml')) atom

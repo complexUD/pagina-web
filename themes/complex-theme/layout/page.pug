@@ -1,6 +1,6 @@
 extends base/layout.pug
 
 block mainContent
+  +breadcrumb()
   .container.py-3
-    include mixins/post.pug
-    +page(page)
+    +page()

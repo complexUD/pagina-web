@@ -5,6 +5,8 @@
 }
 
 html {
+    scroll-behavior: smooth;
+
     // Custom ScrollBar for Firefox
     scrollbar-color: rgba($secondary, 0.8) $primary-light;
 }
@@ -60,4 +62,21 @@ img {
     // auto          -> navbar
     // 1fr           -> mainContent
     // auto(default) -> others (Footer, ...etc) 
+}
+
+.to-top {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba($black, 0.6);
+    color: $white;
+
+    &:hover {
+        background-color: rgba($black, 0.8);
+        color: $white;
+        font-weight: bold;
+    }
 }

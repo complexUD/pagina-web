@@ -1,0 +1,9 @@
+.subCategories {
+    padding: 1em;
+    display: flex;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}

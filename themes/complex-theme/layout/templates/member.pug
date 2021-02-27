@@ -1,0 +1,26 @@
+extends ../base/layout.pug
+
+block mainContent
+  +breadcrumb()
+  .container.py-3
+    .row
+      .col-md-4
+        .sticky-top(style="top: 90px")
+          - let data = page.data || {}
+          .text-center
+            img.img-author-description(src=url_for(page.path + '/' + data.imagen), alt='Foto de Perfil')
+          .info-author
+            h2.name-member #{ data.Nombre }
+            p.my-1 #[b Sexo:] #{ data.Sexo }
+            p.my-1 #[b Edad:] #{ data.Edad }
+            p.my-1 #[b Nacimiento:] #{ data.Nacimiento }
+            p.my-1 #[b Correo:] #{ data.Correo }
+            p.my-1 #[b Teléfono:] #{ data.Teléfono }
+      .col-md-8
+        +post()
+
+
+
+
+
+
