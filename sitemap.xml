@@ -2,105 +2,140 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://complexud.com/members/member-anyone/</loc>
+    <loc>https://complexud.com/seminarios/index.html</loc>
     
-    <lastmod>2020-08-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://complexud.com/members/member-test/</loc>
-    
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://complexud.com/investigacion/lineas/logistica-hospitalaria/</loc>
+    <loc>https://complexud.com/sustentaciones/index.html</loc>
     
-    <lastmod>2020-08-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://complexud.com/investigacion/lineas/problemas-transporte/</loc>
-    
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://complexud.com/about/index.html</loc>
+    <loc>https://complexud.com/publicaciones/index.html</loc>
     
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/investigadores/index.html</loc>
+    
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/objetivos/index.html</loc>
+    
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/productividad/index.html</loc>
+    
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/historia/index.html</loc>
+    
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/miembros/Pilar-Garc%C3%ADa-de-Castro-Elizo/</loc>
+    
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/miembros/Tina-Regina-Teran-Abellas/</loc>
+    
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/miembros/Orlando-Oriol-Aiestaran-Ortiz/</loc>
+    
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/convocatorias/index.html</loc>
+    
+    <lastmod>2021-02-27</lastmod>
     
   </url>
   
   <url>
     <loc>https://complexud.com/investigacion/lineas/complejidad-organizaciones/</loc>
     
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
     
   </url>
   
   <url>
     <loc>https://complexud.com/investigacion/lineas/comportamientos-colectivos/</loc>
     
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
     
   </url>
   
   <url>
     <loc>https://complexud.com/investigacion/lineas/informatica-educativa/</loc>
     
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://complexud.com/investigacion/lineas/ingenieria-sistemas-complejos/</loc>
+    <loc>https://complexud.com/investigacion/lineas/logistica-hospitalaria/</loc>
     
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/investigacion/lineas/problemas-transporte/</loc>
+    
+    <lastmod>2021-02-27</lastmod>
     
   </url>
   
   <url>
     <loc>https://complexud.com/404.html</loc>
     
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://complexud.com/con%C3%B3cenos/index.html</loc>
+    
+    <lastmod>2020-08-16</lastmod>
     
   </url>
   
 
   <url>
     <loc>https://complexud.com/</loc>
-    <lastmod>2020-08-20</lastmod>
+    <lastmod>2021-02-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
 
-  
-  <url>
-    <loc>https://complexud.com/categories/members/</loc>
-    <lastmod>2020-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://complexud.com/categories/investigacion/</loc>
-    <lastmod>2020-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://complexud.com/categories/investigacion/lineas/</loc>
-    <lastmod>2020-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
 </urlset>
