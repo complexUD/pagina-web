@@ -18,38 +18,32 @@
 }
 
 .suscription-input {
-    padding: .7rem 5rem .7rem .75rem;
+    padding: 0.7rem 5rem 0.7rem 0.75rem;
     height: auto;
 
     &:focus {
         border-color: $primary;
-        box-shadow: 0 0 0 0.2rem rgba($primary, .25);
+        box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
     }
 }
 
 .suscription-button {
     position: absolute;
-    top: .3em;
-    right: .3em;
+    top: 0.3em;
+    right: 0.3em;
     background-color: $secondary;
     opacity: 0.7;
     color: $white;
 
-    //Not available yet
-    cursor: not-allowed !important;
-
-    &:hover {
+    &:hover,
+    &:focus {
         color: $white;
-        // opacity: 1;
+        opacity: 1;
     }
 
-    // &:active {
-    //     background-color: $secondary-dark;
-    // }
-
-    &:focus {
-        border-color: transparent;
-        box-shadow: none;
+    &:active {
+        opacity: 1;
+        background-color: $secondary-dark;
     }
 }
 
@@ -62,7 +56,6 @@
         color: $secondary;
     }
 }
-
 
 // Anterior
 // .footer-main-container {

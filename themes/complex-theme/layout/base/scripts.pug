@@ -6,6 +6,10 @@ if is_home()
   script(src=url_for('/js/index.js'))
 script(src=url_for('/js/to-top.js'))
 
+//- Suscription Scripts
+script(src='https://www.google.com/recaptcha/api.js' async defer)
+script(src=url_for('/js/submit-form.js'))
+
 //- LaTex
 if theme.mathjax
   script(async, src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML', integrity='sha384-Ra6zh6uYMmH5ydwCqqMoykyf1T/+ZcnOQfFPhDrp2kI4OIxadnhsvvA2vv9A7xYv', crossorigin='anonymous')

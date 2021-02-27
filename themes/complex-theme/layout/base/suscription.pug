@@ -1,9 +1,22 @@
 .container-fluid.py-5.suscription
   h4.suscription-title Suscríbete a Nuestro Boletín
-  form(action="#" onSubmit="return false").suscription-form
-    input#email(type="email", name="email", placeholder="Ingresa tu correo", required).form-control.suscription-input
-    button(type='button').btn.suscription-button Enviar
-    //- button(type='button', data-toggle='modal', data-target='#suscribeModal').btn.suscription-button Enviar
+
+  form#suscription-form(method='post' action='https://app.mdirector.com/form-subscribe' target='suscription-iframe').suscription-form
+    //- Input
+    input#email(type='email' name='EMAIL' placeholder='Ingresa tu correo' maxlength='250' minlength='7' required).form-control.suscription-input
+    button(type='submit').btn.suscription-button Enviar
+
+    //- Hidden Inputs
+    input#empId(type='hidden' name='empId' value='31102')
+    input#formId(type='hidden' name='formId' value='3')
+    input#lang(type='hidden' name='lang' value='es')
+    input#privacy(type='checkbox' name='privacy' required checked hidden)
+
+    //- Recaptcha Validator
+    #recaptcha.g-recaptcha(data-sitekey='6LdxmykUAAAAAF0_XFEblaWjhI98m_H2MTo_AfEP' data-callback='onSubmit' data-size='invisible')
+
+    //- Iframe to render form action
+    iframe#suscription-iframe(name='suscription-iframe' frameborder='0' hidden)
 
   p.suscription-legend: small Te estás suscribiendo para recibir nuestros boletines y novedades sobre productos. Al hacerlo estás aceptando nuestra #[a(href="#") política de privacidad], pero puedes darte de baja en cualquier momento.
 
