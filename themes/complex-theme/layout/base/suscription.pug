@@ -19,6 +19,12 @@
     iframe#suscription-iframe(name='suscription-iframe' frameborder='0' hidden)
 
   p.suscription-legend: small Te estás suscribiendo para recibir nuestros boletines y novedades sobre productos. Al hacerlo estás aceptando nuestra #[a(href="#") política de privacidad], pero puedes darte de baja en cualquier momento.
+  div#suscription-notification.suscription-success
+    button#suscription-notification-close(type="button" class="close")
+      span(aria-hidden="true") &times;
+    div
+      h4 Gracias Por Suscribirte
+      p En breve recibirás un correo con instrucciones para la activación de tu cuenta.
 
 //- #suscribeModal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
 //-   .modal-dialog(role='document')
