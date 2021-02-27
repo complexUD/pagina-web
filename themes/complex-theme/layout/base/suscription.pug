@@ -4,7 +4,7 @@
   form#suscription-form(method='post' action='https://app.mdirector.com/form-subscribe' target='suscription-iframe').suscription-form
     //- Input
     input#email(type='email' name='EMAIL' placeholder='Ingresa tu correo' maxlength='250' minlength='7' required).form-control.suscription-input
-    button(type='submit').btn.suscription-button Enviar
+    button#send(type='submit' disabled).btn.suscription-button Enviar
 
     //- Hidden Inputs
     input#empId(type='hidden' name='empId' value='31102')

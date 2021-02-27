@@ -45,6 +45,11 @@
         opacity: 1;
         background-color: $secondary-dark;
     }
+
+    &[disabled] {
+        background-color: $muted;
+        cursor: not-allowed !important;
+    }
 }
 
 .suscription-legend {

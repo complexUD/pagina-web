@@ -1,12 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("suscription-form");
+  const emailInput = document.getElementById("email");
+  const sendBtn = document.getElementById("send");
+  const emailTest = /\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/i;
+
   form.addEventListener("submit", (evt) => {
     evt.preventDefault();
 
-    // Validate Inputs
+    if (emailTest.test(emailInput.value)) {
+      grecaptcha.execute();
+    }
 
-    grecaptcha.execute();
     return false;
+  });
+
+  emailInput.addEventListener("input", () => {
+    sendBtn.disabled = !emailTest.test(emailInput.value);
   });
 });
 
@@ -25,8 +34,11 @@ function onSubmit() {
 
     alert("¡Gracias por suscribirte!");
 
-    // Reset Form to accept news suscriptions
-    form.reset();
+    // Reset Recaptcha
     grecaptcha.reset();
+
+    // Reset Form to accept news suscriptions
+    emailInput.value = "";
+    sendBtn.disabled = true;
   });
 }
