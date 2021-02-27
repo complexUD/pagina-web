@@ -5,6 +5,7 @@
     //- Input
     input#email(type='email' name='EMAIL' placeholder='Ingresa tu correo' maxlength='250' minlength='7' required).form-control.suscription-input
     button#send(type='submit' disabled).btn.suscription-button Enviar
+    div#send-loader.suscription-spinner.spinner-border(role="status" hidden)
 
     //- Hidden Inputs
     input#empId(type='hidden' name='empId' value='31102')

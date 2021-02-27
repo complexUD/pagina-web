@@ -52,6 +52,13 @@
     }
 }
 
+.suscription-spinner {
+    position: absolute;
+    top: 0.5em;
+    right: 1.3em;
+    color: $secondary;
+}
+
 .suscription-legend {
     width: 100%;
     max-width: 600px;
@@ -64,7 +71,7 @@
 
 .suscription-success {
     text-align: center;
-    background-color: $secondary-light;
+    background-color: $secondary;
     color: $white;
 
     // width: 300px;
