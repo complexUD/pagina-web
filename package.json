@@ -14,6 +14,7 @@
     "hexo": "^5.1.1",
     "hexo-auto-category": "^0.2.0",
     "hexo-browsersync": "^0.3.0",
+    "hexo-cli": "^4.3.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index2": "^0.2.0",
