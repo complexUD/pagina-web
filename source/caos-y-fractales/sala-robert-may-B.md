@@ -6,7 +6,7 @@ title: Sala Robert May - Stand B
 <br>
       
 <div class="mx-auto">
-    <iframe allow="camera; microphone; fullscreen; display-capture; autoplay" src="https://meet.jit.si/SalaRobertMayB" style="height: 600px; width: 100%; border: 0px;"></iframe>
+    <iframe allow="camera; microphone; fullscreen; display-capture; autoplay" src="https://meet.jit.si/SalaRobertMay-B" style="height: 600px; width: 100%; border: 0px;"></iframe>
         <h2 style="padding-top: 3%; padding-bottom: 3%;;">Explora otras salas</h2>
         <div class="page-content">
             <div class="row">
