@@ -3,7 +3,7 @@ title: "Evento virtual: Caos y Fractales"
 ---
 <br>
 <div class="row">
-    <div class="col-3">
+    <div class="col-md-3">
         <div class="card border-primary mb-3">
             <div class="card-header">Sala Benoit Mandelbrot</div>
             <div class="card-body text-primary">
@@ -12,7 +12,7 @@ title: "Evento virtual: Caos y Fractales"
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-md-3">
         <div class="card border-primary mb-3">
             <div class="card-header">Sala Benoit Mandelbrot</div>
             <div class="card-body text-primary">
@@ -21,7 +21,7 @@ title: "Evento virtual: Caos y Fractales"
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-md-3">
         <div class="card border-primary mb-3">
             <div class="card-header">Sala Robert May</div>
             <div class="card-body text-primary">
@@ -30,7 +30,7 @@ title: "Evento virtual: Caos y Fractales"
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-md-3">
         <div class="card border-primary mb-3">
             <div class="card-header">Sala Robert May</div>
             <div class="card-body text-primary">
@@ -39,7 +39,7 @@ title: "Evento virtual: Caos y Fractales"
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-md-3">
         <div class="card border-primary mb-3">
             <div class="card-header">Sala Edward Lorenz</div>
             <div class="card-body text-primary">
