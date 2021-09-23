@@ -10,7 +10,7 @@ title: Sala Benoit Mandelbrot - Stand A
         <h2 style="padding-top: 3%; padding-bottom: 3%;;">Explora otras salas</h2>
         <div class="page-content">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="card border-primary mb-3">
                         <div class="card-header">Sala Benoit Mandelbrot</div>
                         <div class="card-body text-primary">
@@ -19,7 +19,7 @@ title: Sala Benoit Mandelbrot - Stand A
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="card border-primary mb-3">
                         <div class="card-header">Sala Robert May</div>
                         <div class="card-body text-primary">
@@ -28,7 +28,7 @@ title: Sala Benoit Mandelbrot - Stand A
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="card border-primary mb-3">
                         <div class="card-header">Sala Robert May</div>
                         <div class="card-body text-primary">
@@ -37,7 +37,7 @@ title: Sala Benoit Mandelbrot - Stand A
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="card border-primary mb-3">
                         <div class="card-header">Sala Edward Lorenz</div>
                         <div class="card-body text-primary">
